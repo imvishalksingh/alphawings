@@ -46,7 +46,7 @@ export default function BrandingServices() {
 </div>
 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[300px]">
 
-<div className="md:col-span-2 md:row-span-2 relative group rounded-xl overflow-hidden border border-white/5 bg-surface-container-low">
+<Link to="/services/branding/brand-identity" className="md:col-span-2 md:row-span-2 relative group rounded-xl overflow-hidden border border-white/5 bg-surface-container-low block cursor-pointer">
 <div className="absolute inset-0 bg-[url('image-service-identity')] bg-cover bg-center opacity-40 transition-opacity duration-500 group-hover:opacity-60 mix-blend-overlay" data-alt="close up of premium corporate stationery and business cards on dark slate surface with dramatic side lighting"></div>
 <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent"></div>
 <div className="absolute inset-0 p-8 flex flex-col justify-end">
@@ -54,18 +54,18 @@ export default function BrandingServices() {
 <h3 className="font-headline-md text-on-surface mb-2">Brand identity design</h3>
 <p className="font-body-md text-on-surface-variant max-w-md">Comprehensive visual languages engineered for scale. From typographic hierarchies to proprietary color systems that define industry standards.</p>
 </div>
-</div>
+</Link>
 
-<div className="relative group rounded-xl overflow-hidden border border-white/5 bg-surface-container-low">
+<Link to="/services/branding/logo-creation" className="relative group rounded-xl overflow-hidden border border-white/5 bg-surface-container-low block cursor-pointer">
 <div className="absolute inset-0 bg-gradient-to-br from-surface-container-high to-surface-container-lowest"></div>
 <div className="absolute inset-0 p-8 flex flex-col justify-end">
 <span className="material-symbols-outlined text-tertiary mb-4 text-3xl" style={{"fontVariationSettings":"'FILL' 0"}}>shape_line</span>
 <h3 className="font-body-lg font-semibold text-on-surface mb-2">Logo creation</h3>
 <p className="font-body-md text-on-surface-variant text-sm">Minimalist, memorable, and infinitely scalable corporate marks.</p>
 </div>
-</div>
+</Link>
 
-<div className="relative group rounded-xl overflow-hidden border border-white/5 bg-surface-container-low">
+<Link to="/services/branding/strategy" className="relative group rounded-xl overflow-hidden border border-white/5 bg-surface-container-low block cursor-pointer">
 <div className="absolute inset-0 bg-[url('image-service-strategy')] bg-cover bg-center opacity-30 mix-blend-luminosity" data-alt="abstract geometric lines and data points connecting in a dark minimal space representing strategic alignment"></div>
 <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
 <div className="absolute inset-0 p-8 flex flex-col justify-end">
@@ -73,9 +73,9 @@ export default function BrandingServices() {
 <h3 className="font-body-lg font-semibold text-on-surface mb-2">Strategy</h3>
 <p className="font-body-md text-on-surface-variant text-sm">Positioning frameworks that dictate market perception.</p>
 </div>
-</div>
+</Link>
 
-<div className="md:col-span-3 relative group rounded-xl overflow-hidden border border-white/5 bg-surface-container-low">
+<Link to="/services/branding/visual-systems" className="md:col-span-3 relative group rounded-xl overflow-hidden border border-white/5 bg-surface-container-low block cursor-pointer">
 <div className="absolute inset-0 bg-gradient-to-r from-primary-container/20 to-transparent"></div>
 <div className="absolute inset-0 p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
 <div className="max-w-xl">
@@ -95,7 +95,7 @@ export default function BrandingServices() {
 </div>
 </div>
 </div>
-</div>
+</Link>
 </div>
 </div>
 </section>
@@ -156,6 +156,26 @@ export default function BrandingServices() {
 </div>
 </div>
 </section>
+
+<section className="py-section-gap bg-surface-container-lowest border-t border-white/5 relative">
+    <div className="container mx-auto px-margin-edge max-w-container-max">
+        <div className="text-center mb-16">
+            <h2 className="font-headline-lg text-on-surface mb-4">Frequently Asked Questions</h2>
+            <p className="font-body-md text-on-surface-variant max-w-2xl mx-auto">Common inquiries about our systematic branding approach.</p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div className="bg-surface-container p-8 rounded-xl border border-white/5">
+                <h4 className="font-headline-md text-on-surface mb-3">How long does a brand identity project take?</h4>
+                <p className="font-body-md text-on-surface-variant">A comprehensive global enterprise identity typically takes 12-16 weeks, from initial strategy and positioning to final asset delivery and implementation guidelines.</p>
+            </div>
+            <div className="bg-surface-container p-8 rounded-xl border border-white/5">
+                <h4 className="font-headline-md text-on-surface mb-3">Do you provide ongoing brand management?</h4>
+                <p className="font-body-md text-on-surface-variant">Yes, we act as continuous brand guardians for many of our partners, ensuring consistency as the conglomerate expands into new markets and acquisitions.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
 </main>
 
     </div>

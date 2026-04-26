@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>IT Services - Nexus Global</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-background": "#dce4e3",
+                      "outline": "#8e909d",
+                      "on-tertiary-fixed": "#141c28",
+                      "on-primary-fixed": "#001551",
+                      "secondary-container": "#00763a",
+                      "tertiary-fixed": "#dbe3f4",
+                      "surface-tint": "#b7c4ff",
+                      "on-secondary-fixed": "#00210c",
+                      "surface-container-lowest": "#081010",
+                      "tertiary": "#bfc7d8",
+                      "surface-variant": "#2e3636",
+                      "secondary": "#79db93",
+                      "background": "#0d1515",
+                      "secondary-fixed-dim": "#79db93",
+                      "surface-container-high": "#232b2b",
+                      "surface-container": "#192121",
+                      "on-secondary": "#003919",
+                      "primary": "#b7c4ff",
+                      "primary-container": "#4862be",
+                      "on-secondary-fixed-variant": "#005227",
+                      "outline-variant": "#444652",
+                      "on-primary": "#002780",
+                      "inverse-on-surface": "#2a3232",
+                      "tertiary-container": "#606877",
+                      "surface": "#0d1515",
+                      "on-tertiary": "#29313e",
+                      "on-primary-fixed-variant": "#223f9a",
+                      "inverse-primary": "#3d58b3",
+                      "surface-bright": "#333b3b",
+                      "inverse-surface": "#dce4e3",
+                      "primary-fixed": "#dce1ff",
+                      "surface-container-low": "#151d1d",
+                      "secondary-fixed": "#95f8ad",
+                      "on-tertiary-container": "#e0e8f9",
+                      "tertiary-fixed-dim": "#bfc7d8",
+                      "on-surface": "#dce4e3",
+                      "on-tertiary-fixed-variant": "#3f4755",
+                      "error": "#ffb4ab",
+                      "on-primary-container": "#e4e7ff",
+                      "surface-dim": "#0d1515",
+                      "error-container": "#93000a",
+                      "on-secondary-container": "#97f9ae",
+                      "on-surface-variant": "#c5c5d4",
+                      "surface-container-highest": "#2e3636",
+                      "on-error": "#690005",
+                      "on-error-container": "#ffdad6",
+                      "primary-fixed-dim": "#b7c4ff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-edge": "64px",
+                      "container-max": "1440px",
+                      "unit": "8px",
+                      "gutter": "32px",
+                      "section-gap": "128px"
+              },
+              "fontFamily": {
+                      "display-xl": [
+                              "Space Grotesk"
+                      ],
+                      "label-sm": [
+                              "Inter"
+                      ],
+                      "headline-lg": [
+                              "Space Grotesk"
+                      ],
+                      "headline-md": [
+                              "Space Grotesk"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "editorial-italic": [
+                              "notoSerif"
+                      ]
+              },
+              "fontSize": {
+                      "display-xl": [
+                              "72px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.04em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "1",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.5",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "editorial-italic": [
+                              "20px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24
+        }
+        .material-symbols-outlined[data-weight="fill"] {
+            font-variation-settings: 'FILL' 1;
+        }
+        /* Custom inner glow utility */
+        .inner-glow {
+            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+        }
+      </style>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 border-b border-white/10 bg-slate-950/60 backdrop-blur-lg shadow-[0_8px_30px_rgb(0,0,0,0.12)] inner-glow">
+<div class="max-w-[1440px] mx-auto flex justify-between items-center px-8 md:px-16 h-20">
+<div class="text-2xl font-black tracking-tighter text-slate-50 dark:text-white font-['Space_Grotesk']">
+                NEXUS GLOBAL
+            </div>
+<div class="hidden md:flex items-center space-x-8 font-['Space_Grotesk'] font-medium tracking-tight">
+<a class="text-blue-500 dark:text-blue-400 border-b-2 border-blue-500 pb-1" href="#">Solutions</a>
+<a class="text-slate-400 dark:text-slate-500 hover:text-slate-50 dark:hover:text-white transition-colors hover:bg-white/5 rounded-lg px-3 py-2 transition-all duration-300" href="#">Divisions</a>
+<a class="text-slate-400 dark:text-slate-500 hover:text-slate-50 dark:hover:text-white transition-colors hover:bg-white/5 rounded-lg px-3 py-2 transition-all duration-300" href="#">About</a>
+<a class="text-slate-400 dark:text-slate-500 hover:text-slate-50 dark:hover:text-white transition-colors hover:bg-white/5 rounded-lg px-3 py-2 transition-all duration-300" href="#">Insights</a>
+<a class="text-slate-400 dark:text-slate-500 hover:text-slate-50 dark:hover:text-white transition-colors hover:bg-white/5 rounded-lg px-3 py-2 transition-all duration-300" href="#">Careers</a>
+</div>
+<div class="flex items-center space-x-4">
+<button class="text-slate-400 hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</button>
+<button class="bg-gradient-to-r from-primary-container to-blue-500 text-white px-6 py-2.5 rounded-lg font-medium text-sm tracking-wide hover:opacity-90 transition-all border border-white/10 scale-95 active:opacity-80">
+                    Get in Touch
+                </button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative pt-40 pb-32 overflow-hidden flex items-center justify-center min-h-[819px]">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-b from-background via-background/90 to-background z-10"></div>
+<img alt="Ultra-modern, high-tech server room with glowing blue and teal lights representing digital resilience" class="w-full h-full object-cover opacity-30 mix-blend-luminosity" data-alt="Abstract digital network connections glowing blue over a deep space dark background, representing high-tech global IT infrastructure and data flow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmf1nEqkcD9jEEbdUpDN5HgSfuTs9QwpOidgWHPM59f4hqeoZA_FrYfdRkm46qZJvDcJtQW3ujdty4O5lN9EfRp8pYvNZN5zeh2b4Defxn-I99qQa0V4A0vYN9IzSeK-OsKBzJNjDwNhUytvuptahUJdqKfGr8PmzvUNDDuyUkFFGBYWbG1hB1vgOUVV0fwtDqSwNdKr06rWJKV3v2zBEviikMif9hZ58LB2mOqrpP3pNEWcGIuON1x4mSSSraz4xc6K7Y5AYjoA4"/>
+</div>
+<div class="relative z-10 max-w-container-max mx-auto px-gutter text-center">
+<div class="inline-block px-4 py-1.5 mb-8 rounded-full border border-outline/30 bg-surface-variant/50 backdrop-blur-md">
+<span class="font-label-sm text-label-sm text-primary tracking-widest uppercase">IT Services &amp; Solutions</span>
+</div>
+<h1 class="font-display-xl text-display-xl text-on-surface mb-6 max-w-4xl mx-auto">
+                Architecting <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-blue-400 to-tertiary">Digital Resilience</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-12">
+                We engineer scalable software, secure cloud infrastructures, and intuitive mobile experiences that drive enterprise transformation and operational dominance.
+            </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<button class="px-8 py-4 bg-gradient-to-r from-primary-container to-blue-600 text-white rounded-lg font-medium border border-white/10 hover:shadow-[0_0_20px_rgba(72,98,190,0.4)] transition-all">
+                    Initiate Project
+                </button>
+<button class="px-8 py-4 bg-surface-container-high/50 backdrop-blur-md text-on-surface border border-outline/30 rounded-lg font-medium hover:bg-surface-variant transition-all flex items-center gap-2">
+<span class="material-symbols-outlined" data-icon="play_circle">play_circle</span>
+                    Watch Overview
+                </button>
+</div>
+</div>
+</header>
+<!-- Empowering Digital Transformation (Bento Grid) -->
+<section class="py-section-gap max-w-container-max mx-auto px-gutter">
+<div class="mb-16 text-center">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Empowering Digital Transformation</h2>
+<p class="font-body-md text-body-md text-outline max-w-2xl mx-auto">Comprehensive IT capabilities designed for modern corporate conglomerates.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[280px]">
+<!-- Web & Cloud (Large Card) -->
+<div class="md:col-span-2 md:row-span-2 relative rounded-xl border border-outline/20 bg-surface-container-low overflow-hidden group">
+<div class="absolute inset-0 bg-gradient-to-br from-primary-container/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+<div class="p-10 h-full flex flex-col justify-between relative z-10">
+<div>
+<div class="w-14 h-14 rounded-lg bg-surface-variant flex items-center justify-center mb-6 border border-outline/20">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="cloud_sync">cloud_sync</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">Cloud Infrastructure &amp; Web Architecture</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">Scalable, secure, and globally distributed cloud solutions integrated with high-performance web applications designed for absolute reliability.</p>
+</div>
+<div class="flex gap-3">
+<span class="px-3 py-1 rounded-full bg-tertiary-container/20 text-tertiary font-label-sm text-label-sm">AWS/AZURE</span>
+<span class="px-3 py-1 rounded-full bg-tertiary-container/20 text-tertiary font-label-sm text-label-sm">MICROSERVICES</span>
+</div>
+</div>
+<img alt="High-tech server room representing cloud infrastructure and web architecture" class="absolute bottom-0 right-0 w-2/3 h-2/3 object-cover opacity-20 mask-image-gradient-to-t mix-blend-screen pointer-events-none" data-alt="Abstract view of modern server racks in a data center with cool blue LED lighting indicating active data processing and cloud infrastructure" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmf1nEqkcD9jEEbdUpDN5HgSfuTs9QwpOidgWHPM59f4hqeoZA_FrYfdRkm46qZJvDcJtQW3ujdty4O5lN9EfRp8pYvNZN5zeh2b4Defxn-I99qQa0V4A0vYN9IzSeK-OsKBzJNjDwNhUytvuptahUJdqKfGr8PmzvUNDDuyUkFFGBYWbG1hB1vgOUVV0fwtDqSwNdKr06rWJKV3v2zBEviikMif9hZ58LB2mOqrpP3pNEWcGIuON1x4mSSSraz4xc6K7Y5AYjoA4"/>
+</div>
+<!-- Mobile -->
+<div class="rounded-xl border border-outline/20 bg-surface-container-low p-8 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-secondary-container/20 blur-3xl rounded-full"></div>
+<div class="w-12 h-12 rounded-lg bg-surface-variant flex items-center justify-center mb-6 border border-outline/20">
+<span class="material-symbols-outlined text-secondary text-2xl" data-icon="smartphone">smartphone</span>
+</div>
+<h3 class="font-headline-md text-2xl font-medium text-on-surface mb-3">Mobile Ecosystems</h3>
+<p class="font-body-md text-sm text-on-surface-variant">Native and cross-platform mobile applications engineered for enterprise mobility and seamless user engagement.</p>
+</div>
+<!-- Software -->
+<div class="rounded-xl border border-outline/20 bg-surface-container-low p-8 relative overflow-hidden">
+<div class="absolute bottom-0 left-0 w-32 h-32 bg-primary-container/20 blur-3xl rounded-full"></div>
+<div class="w-12 h-12 rounded-lg bg-surface-variant flex items-center justify-center mb-6 border border-outline/20">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="terminal">terminal</span>
+</div>
+<h3 class="font-headline-md text-2xl font-medium text-on-surface mb-3">Custom Software</h3>
+<p class="font-body-md text-sm text-on-surface-variant">Bespoke software development tailored to automate complex workflows and unify operational data.</p>
+</div>
+<!-- Maintenance -->
+<div class="md:col-span-3 rounded-xl border border-outline/20 bg-surface-container-low p-8 flex items-center justify-between relative overflow-hidden">
+<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-surface-variant/30 via-transparent to-transparent"></div>
+<div class="relative z-10 flex items-center gap-8">
+<div class="w-16 h-16 rounded-full bg-surface-variant flex items-center justify-center border border-outline/20 shrink-0">
+<span class="material-symbols-outlined text-tertiary text-3xl" data-icon="settings_suggest">settings_suggest</span>
+</div>
+<div>
+<h3 class="font-headline-md text-2xl font-medium text-on-surface mb-2">Ongoing Maintenance &amp; Security</h3>
+<p class="font-body-md text-on-surface-variant">24/7 monitoring, proactive threat mitigation, and continuous system optimization to ensure zero downtime.</p>
+</div>
+</div>
+<button class="relative z-10 shrink-0 px-6 py-2 border border-outline/50 rounded-lg text-on-surface hover:bg-surface-variant transition-colors">
+                     View SLAs
+                 </button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-900 bg-slate-950 dark:bg-black mt-32">
+<div class="max-w-[1440px] mx-auto px-8 md:px-16 py-20 grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-1 flex flex-col space-y-6">
+<span class="text-xl font-bold text-white uppercase tracking-widest font-['Space_Grotesk']">
+                    NEXUS GLOBAL
+                </span>
+<p class="font-['Space_Grotesk'] text-sm tracking-wide text-slate-500">
+                    © 2024 Nexus Global Holdings. Architecting the future of industry.
+                </p>
+</div>
+<div class="col-span-1 md:col-span-3 flex flex-wrap gap-8 md:justify-end items-start font-['Space_Grotesk'] text-sm tracking-wide">
+<a class="text-slate-500 hover:text-slate-300 transition-colors hover:text-blue-400 underline-offset-4 hover:underline transition-all duration-200 ease-in-out" href="#">Privacy Policy</a>
+<a class="text-slate-500 hover:text-slate-300 transition-colors hover:text-blue-400 underline-offset-4 hover:underline transition-all duration-200 ease-in-out" href="#">Terms of Service</a>
+<a class="text-slate-500 hover:text-slate-300 transition-colors hover:text-blue-400 underline-offset-4 hover:underline transition-all duration-200 ease-in-out" href="#">Investor Relations</a>
+<a class="text-slate-500 hover:text-slate-300 transition-colors hover:text-blue-400 underline-offset-4 hover:underline transition-all duration-200 ease-in-out" href="#">ESG Report</a>
+<a class="text-slate-500 hover:text-slate-300 transition-colors hover:text-blue-400 underline-offset-4 hover:underline transition-all duration-200 ease-in-out" href="#">Global Offices</a>
+</div>
+</div>
+</footer>
+</body></html>

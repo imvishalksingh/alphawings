@@ -53,4 +53,14 @@
   .radial-glow {
     background: radial-gradient(circle at 0% 0%, rgba(91, 127, 255, 0.15) 0%, transparent 50%);
   }
+  .mask-image-gradient-to-t {
+    -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+    mask-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+  }
+  .blue-trail {
+    position: absolute;
+    height: 2px;
+    width: 100vw;
+    background: linear-gradient(90deg, transparent, #3b82f6, transparent);
+  }
 }

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>NEXUS GLOBAL | Architecting Global Excellence</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Inter:wght@400;500;600&amp;family=Noto+Serif:italic&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(33, 41, 54, 0.4);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #b7c4ff 0%, #4862be 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary": "#29313e",
+                        "inverse-primary": "#3d58b3",
+                        "surface-dim": "#0d1515",
+                        "tertiary": "#bfc7d8",
+                        "on-error": "#690005",
+                        "primary-fixed": "#dce1ff",
+                        "on-secondary-fixed-variant": "#005227",
+                        "on-surface-variant": "#c5c5d4",
+                        "on-error-container": "#ffdad6",
+                        "error-container": "#93000a",
+                        "tertiary-fixed-dim": "#bfc7d8",
+                        "on-surface": "#dce4e3",
+                        "inverse-on-surface": "#2a3232",
+                        "surface-variant": "#2e3636",
+                        "secondary-fixed-dim": "#79db93",
+                        "surface-container-low": "#151d1d",
+                        "on-secondary-fixed": "#00210c",
+                        "outline-variant": "#444652",
+                        "on-primary-container": "#e4e7ff",
+                        "inverse-surface": "#dce4e3",
+                        "surface-tint": "#b7c4ff",
+                        "secondary": "#79db93",
+                        "surface-container-high": "#232b2b",
+                        "on-secondary": "#003919",
+                        "surface": "#0d1515",
+                        "primary-fixed-dim": "#b7c4ff",
+                        "on-tertiary-container": "#e0e8f9",
+                        "tertiary-fixed": "#dbe3f4",
+                        "on-tertiary-fixed-variant": "#3f4755",
+                        "error": "#ffb4ab",
+                        "secondary-fixed": "#95f8ad",
+                        "on-background": "#dce4e3",
+                        "secondary-container": "#00763a",
+                        "on-primary-fixed-variant": "#223f9a",
+                        "surface-bright": "#333b3b",
+                        "on-primary": "#002780",
+                        "surface-container-highest": "#2e3636",
+                        "primary": "#b7c4ff",
+                        "tertiary-container": "#606877",
+                        "outline": "#8e909d",
+                        "on-secondary-container": "#97f9ae",
+                        "background": "#0d1515",
+                        "on-primary-fixed": "#001551",
+                        "surface-container-lowest": "#081010",
+                        "surface-container": "#192121",
+                        "primary-container": "#4862be",
+                        "on-tertiary-fixed": "#141c28"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1440px",
+                        "margin-edge": "64px",
+                        "unit": "8px",
+                        "gutter": "32px",
+                        "section-gap": "128px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "headline-lg": ["Space Grotesk"],
+                        "display-xl": ["Space Grotesk"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Space Grotesk"],
+                        "editorial-italic": ["Noto Serif"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "display-xl": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                        "editorial-italic": ["20px", {"lineHeight": "1.6", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 border-b border-white/10 bg-slate-950/40 backdrop-blur-[20px] shadow-[0_8px_32px_0_rgba(0,0,0,0.3)]">
+<div class="max-w-[1440px] mx-auto px-8 lg:px-16 flex justify-between items-center h-20">
+<div class="text-2xl font-black tracking-tighter text-slate-900 dark:text-white font-headline-lg uppercase">
+                NEXUS GLOBAL
+            </div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-blue-600 dark:text-[#4862BE] border-b-2 border-[#4862BE] pb-1 font-headline-md text-body-md" href="#">Divisions</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors font-headline-md text-body-md" href="#">Innovation</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors font-headline-md text-body-md" href="#">Investors</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors font-headline-md text-body-md" href="#">Sustainability</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors font-headline-md text-body-md" href="#">Careers</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="bg-primary-container text-on-primary-container px-6 py-2.5 rounded-full font-label-sm active:scale-95 transform transition-transform hover:bg-white/5">
+                    Partner With Us
+                </button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(72,98,190,0.15),transparent_50%)]"></div>
+<img alt="" class="w-full h-full object-cover opacity-30 mix-blend-overlay" data-alt="Abstract satellite view of Earth glowing at night with digital data networks spanning across continents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABMst2RVDySpGGWg7rOgHlnUyP9u_RmyfLhyXEPgwrsDKOcpJOqkDdilQBQBQTWBH67dMuaZnpegNu2nnAbHIdrvEztydQIast2jXr7ER1dQcTg7q6fir6iP5UxzflMfIa7mnYOlXXCeqb9fT0mHnKJG6LgsMiI4-KqcUz_L56jrFehzbaQ5ah0McOT_swe3cvWUx73VCABISBVLGHe7VARHRnNq5spUcd_zvcLDS1goVc3g7ocER4K0vLB1i076yMCRIm6dkW-Qs"/>
+</div>
+<div class="max-w-[1440px] mx-auto px-8 lg:px-16 relative z-10 grid lg:grid-cols-2 gap-12 items-center">
+<div>
+<span class="font-label-sm text-primary tracking-[0.3em] uppercase mb-6 block">Global Conglomerate 2024</span>
+<h1 class="font-display-xl text-display-xl mb-8 leading-none">
+                    ENGINEERING <br/>
+<span class="text-gradient">THE INFINITE</span> <br/>
+                    POSSIBLE.
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg mb-10">
+                    A multi-sector institutional force driving structural innovation across seven core global industries. We don't just invest in the future; we build the architecture it stands on.
+                </p>
+<div class="flex gap-4">
+<button class="bg-primary px-8 py-4 rounded-lg font-headline-md text-body-md text-on-primary font-bold active:scale-95 transition-transform">
+                        Explore Divisions
+                    </button>
+<button class="glass-card px-8 py-4 rounded-lg font-headline-md text-body-md border border-white/10 active:scale-95 transition-transform">
+                        Institutional Investor Portal
+                    </button>
+</div>
+</div>
+<div class="hidden lg:block relative">
+<div class="absolute -inset-10 bg-primary/20 blur-[120px] rounded-full"></div>
+<div class="glass-card p-4 rounded-3xl relative overflow-hidden border-white/20">
+<img alt="" class="rounded-2xl w-full h-[500px] object-cover" data-alt="High-tech glowing data visualization dashboard showing global market fluctuations and financial metrics on a dark screen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQHU2KiBWwx1tpViMweKl2zOqDfc11DENEgduY6HOrB7BpOMdDzqYz5ThxOPRyjy9YwiHafb0El0bPdE2gIAm-r0UpuiXujz0PjZAYssoOx8jNcYOmAVDdmX7dA_StChMhEI2a71Q7RNiSHhPtZvPm0Rst2ifXAmsHuTE4bV9Ibmfpa4TpaEPVd6l0W2dWgga31BqYJ-v24IEB1OTylgLCVW68qIq5CcSTzW1IoDBVgxkLYp6k-QihAf0xGdZBjl65Oij1INZymYk"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Vision Section -->
+<section class="py-32 bg-surface-container-lowest">
+<div class="max-w-[1440px] mx-auto px-8 lg:px-16">
+<div class="grid lg:grid-cols-12 gap-16 items-center">
+<div class="lg:col-span-4">
+<h2 class="font-headline-lg text-headline-lg mb-4">Our Vision.</h2>
+<div class="h-1 w-24 bg-primary rounded-full"></div>
+</div>
+<div class="lg:col-span-8">
+<p class="font-editorial-italic text-editorial-italic text-on-surface italic leading-relaxed">
+                        "At Nexus Global, we operate at the intersection of capital, technology, and human potential. Our mission is to stabilize emerging markets through robust infrastructure while aggressively scaling disruptive technologies that redefine how the world functions."
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Service Grid -->
+<section class="py-section-gap">
+<div class="max-w-[1440px] mx-auto px-8 lg:px-16">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16">
+<div>
+<span class="font-label-sm text-secondary tracking-widest uppercase mb-4 block">Our Operations</span>
+<h2 class="font-headline-lg text-headline-lg">Divisional Ecosystem</h2>
+</div>
+<p class="font-body-md text-on-surface-variant max-w-sm">
+                    Synergized operations across seven strategic pillars to ensure global market dominance.
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-gutter">
+<!-- IT -->
+<div class="glass-card p-8 rounded-2xl group hover:bg-white/5 transition-all cursor-pointer">
+<span class="material-symbols-outlined text-primary text-4xl mb-6" data-icon="terminal">terminal</span>
+<h3 class="font-headline-md text-headline-md text-lg mb-3">Nexus IT &amp; AI</h3>
+<p class="text-on-surface-variant text-sm font-body-md leading-relaxed">Pioneering neural networks and decentralized cloud architectures for sovereign entities.</p>
+</div>
+<!-- Finance -->
+<div class="glass-card p-8 rounded-2xl group hover:bg-white/5 transition-all cursor-pointer border-primary/30">
+<span class="material-symbols-outlined text-primary text-4xl mb-6" data-icon="account_balance">account_balance</span>
+<h3 class="font-headline-md text-headline-md text-lg mb-3">Global Finance</h3>
+<p class="text-on-surface-variant text-sm font-body-md leading-relaxed">Asset management and algorithmic trading infrastructure for institutional liquidity.</p>
+</div>
+<!-- Gov -->
+<div class="glass-card p-8 rounded-2xl group hover:bg-white/5 transition-all cursor-pointer">
+<span class="material-symbols-outlined text-primary text-4xl mb-6" data-icon="account_balance_wallet">account_balance_wallet</span>
+<h3 class="font-headline-md text-headline-md text-lg mb-3">Gov-Tech Sol</h3>
+<p class="text-on-surface-variant text-sm font-body-md leading-relaxed">Strategic consulting and digital infrastructure for national development projects.</p>
+</div>
+<!-- Management -->
+<div class="glass-card p-8 rounded-2xl group hover:bg-white/5 transition-all cursor-pointer">
+<span class="material-symbols-outlined text-primary text-4xl mb-6" data-icon="corporate_fare">corporate_fare</span>
+<h3 class="font-headline-md text-headline-md text-lg mb-3">Asset Mgmt</h3>
+<p class="text-on-surface-variant text-sm font-body-md leading-relaxed">Operational excellence and restructuring for Tier-1 corporate assets.</p>
+</div>
+<!-- Marketing -->
+<div class="glass-card p-8 rounded-2xl group hover:bg-white/5 transition-all cursor-pointer">
+<span class="material-symbols-outlined text-primary text-4xl mb-6" data-icon="campaign">campaign</span>
+<h3 class="font-headline-md text-headline-md text-lg mb-3">Global Outreach</h3>
+<p class="text-on-surface-variant text-sm font-body-md leading-relaxed">Data-driven narrative engineering and global market penetration strategies.</p>
+</div>
+<!-- Branding -->
+<div class="glass-card p-8 rounded-2xl group hover:bg-white/5 transition-all cursor-pointer">
+<span class="material-symbols-outlined text-primary text-4xl mb-6" data-icon="diamond">diamond</span>
+<h3 class="font-headline-md text-headline-md text-lg mb-3">Nexus Creative</h3>
+<p class="text-on-surface-variant text-sm font-body-md leading-relaxed">High-end brand architectural development for luxury and industrial sectors.</p>
+</div>
+<!-- Political -->
+<div class="glass-card p-8 rounded-2xl group hover:bg-white/5 transition-all cursor-pointer col-span-1 md:col-span-2">
+<span class="material-symbols-outlined text-primary text-4xl mb-6" data-icon="public">public</span>
+<h3 class="font-headline-md text-headline-md text-lg mb-3">Strategic Policy</h3>
+<p class="text-on-surface-variant text-sm font-body-md leading-relaxed">Navigating complex geopolitical landscapes through advisory and risk mitigation frameworks.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us & Stats -->
+<section class="py-section-gap relative overflow-hidden">
+<div class="absolute inset-0 bg-primary/5 -skew-y-3 transform origin-right"></div>
+<div class="max-w-[1440px] mx-auto px-8 lg:px-16 relative z-10 grid lg:grid-cols-2 gap-24 items-center">
+<div>
+<h2 class="font-headline-lg text-headline-lg mb-12">The Nexus Edge.</h2>
+<div class="space-y-8">
+<div class="flex gap-6 items-start">
+<div class="w-12 h-12 flex-shrink-0 bg-primary/10 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="security">security</span>
+</div>
+<div>
+<h4 class="font-headline-md text-lg mb-2">Unmatched Stability</h4>
+<p class="font-body-md text-on-surface-variant">Diversified portfolio ensuring resilience against regional economic volatility.</p>
+</div>
+</div>
+<div class="flex gap-6 items-start">
+<div class="w-12 h-12 flex-shrink-0 bg-primary/10 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="bolt">bolt</span>
+</div>
+<div>
+<h4 class="font-headline-md text-lg mb-2">Agile Deployment</h4>
+<p class="font-body-md text-on-surface-variant">Proprietary methodologies that cut time-to-market for complex industrial projects by 40%.</p>
+</div>
+</div>
+<div class="flex gap-6 items-start">
+<div class="w-12 h-12 flex-shrink-0 bg-primary/10 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="hub">hub</span>
+</div>
+<div>
+<h4 class="font-headline-md text-lg mb-2">Omni-Channel Integration</h4>
+<p class="font-body-md text-on-surface-variant">Seamless synergy across technology, finance, and branding pillars.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-gutter">
+<div class="glass-card p-10 rounded-3xl text-center">
+<div class="text-display-xl font-bold text-gradient mb-2">$4.2T</div>
+<p class="font-label-sm text-on-surface-variant tracking-widest uppercase">Assets Under Supervision</p>
+</div>
+<div class="glass-card p-10 rounded-3xl text-center mt-12">
+<div class="text-display-xl font-bold text-gradient mb-2">84+</div>
+<p class="font-label-sm text-on-surface-variant tracking-widest uppercase">Global Jurisdictions</p>
+</div>
+<div class="glass-card p-10 rounded-3xl text-center">
+<div class="text-display-xl font-bold text-gradient mb-2">12M</div>
+<p class="font-label-sm text-on-surface-variant tracking-widest uppercase">Workforce Reach</p>
+</div>
+<div class="glass-card p-10 rounded-3xl text-center mt-12">
+<div class="text-display-xl font-bold text-gradient mb-2">0.1s</div>
+<p class="font-label-sm text-on-surface-variant tracking-widest uppercase">Trading Latency</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Global Reach Section -->
+<section class="py-section-gap">
+<div class="max-w-[1440px] mx-auto px-8 lg:px-16 text-center mb-16">
+<h2 class="font-display-xl text-headline-lg mb-4">A Presence Without Borders.</h2>
+<p class="font-body-lg text-on-surface-variant max-w-2xl mx-auto">Strategically headquartered in the world's primary economic nervous systems.</p>
+</div>
+<div class="relative max-w-[1440px] mx-auto h-[600px] rounded-3xl overflow-hidden border border-white/10 mx-8 lg:mx-16">
+<img alt="" class="w-full h-full object-cover grayscale opacity-40" data-alt="Minimalist world map with glowing pinpoints in New York, London, and Singapore connected by thin lines of light" data-location="Global" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBS_pkSne8itzJmpTSe-OPgfVvNBttZe8uf5tCsZWPE-Oo0lfmtSHOrInAGMqxdLJJDZa4dTsMf2lEP4uizzSuGQebu5x9d7MaUaJA54ZGb07aJ7W4s1EVnDOgTZJKkU0rLiTu03HdA31SYs1Ln0M3bHHb7R6fMG0gOpLUEkw_F7SWx3k-km-iAG5abnnZSLmvqDARFDVrbyUwns8uaRF6vKAvcXS1P0IQqM0KaGcQnHXLNIZmCFZd0bCYzvNsdvd0nsWXTvmoZbls"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="grid md:grid-cols-3 gap-8 w-full max-w-4xl px-8">
+<div class="glass-card p-6 rounded-xl border-l-4 border-l-primary">
+<h5 class="font-headline-md text-xl mb-1">New York</h5>
+<p class="text-xs font-label-sm text-on-surface-variant uppercase tracking-tighter">Finance &amp; Policy HQ</p>
+</div>
+<div class="glass-card p-6 rounded-xl border-l-4 border-l-primary translate-y-8">
+<h5 class="font-headline-md text-xl mb-1">London</h5>
+<p class="text-xs font-label-sm text-on-surface-variant uppercase tracking-tighter">Global Trade &amp; Legal</p>
+</div>
+<div class="glass-card p-6 rounded-xl border-l-4 border-l-primary">
+<h5 class="font-headline-md text-xl mb-1">Singapore</h5>
+<p class="text-xs font-label-sm text-on-surface-variant uppercase tracking-tighter">IT &amp; Tech Innovation</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-section-gap bg-surface-container">
+<div class="max-w-[1440px] mx-auto px-8 lg:px-16">
+<div class="max-w-4xl">
+<h2 class="font-headline-lg text-headline-lg mb-16">Trust of the Institutional Elite.</h2>
+<div class="glass-card p-12 rounded-[40px] relative">
+<span class="material-symbols-outlined text-primary text-6xl absolute -top-8 -left-4" data-icon="format_quote">format_quote</span>
+<p class="font-body-lg text-2xl leading-relaxed mb-8">
+                        "Nexus Global didn't just provide us with a service grid; they re-engineered our entire operational methodology. Their IT division implemented a blockchain system that reduced our cross-border friction by 70% in under six months."
+                    </p>
+<div class="flex items-center gap-4">
+<img alt="" class="w-16 h-16 rounded-full object-cover border-2 border-primary" data-alt="Professional portrait of a male executive in a tailored suit, looking confident and smiling slightly" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA49LS2MA9lSFUz3-23iZY2hzegM9eZslt97_W0XyMEsT3iePpfwUqrlY-984j23BBrtAyVBP66Kashq-k0T1Nl7cmLNPJZDYy5rauTnk-HnZTEJA1VdMNtJDomjB2X2TS4tx5qbm0VaDX2yf0BY6ZMf-Yj67s3_dzuAFVT_BPStmEKP1_XoaNeU5EeVR--JwmiuF1Dvcq_6-oHQuF6g8TlarjJRYEluXcxdzsCJSHbClzQzyqQg_QEANp3aZORNddkvdTdRkX7NXo"/>
+<div>
+<p class="font-bold font-headline-md">Jonathan Sterling</p>
+<p class="text-sm font-label-sm text-on-surface-variant">CEO, Sterling-Vanguard Global</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Logo Ticker -->
+<div class="py-12 border-y border-white/5 opacity-50 overflow-hidden">
+<div class="max-w-[1440px] mx-auto px-8 flex justify-between items-center gap-12 grayscale">
+<span class="font-black text-2xl opacity-40">AURORA</span>
+<span class="font-black text-2xl opacity-40">VERTEX</span>
+<span class="font-black text-2xl opacity-40">QUANTUM</span>
+<span class="font-black text-2xl opacity-40">IRONCLAD</span>
+<span class="font-black text-2xl opacity-40">MERCURY</span>
+<span class="font-black text-2xl opacity-40">PACIFIC</span>
+</div>
+</div>
+<!-- Final CTA -->
+<section class="py-section-gap relative overflow-hidden">
+<img alt="" class="absolute inset-0 w-full h-full object-cover opacity-10" data-alt="Modern minimalist office lobby with high glass ceilings and futuristic architectural lines, soft ambient blue light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPIIBV-8GU7j_i_YL27ydKn2aOCQnqA1RcXqHzYgnq41N4VuaFppYDZ6_XcI_Mxvm-yGLZVcoQnBtzIRIw7RgqDSzhbqPEQLbirbE50ribwyk-TeqfPn41_bvJ7SBOBMWNCCCHHo-CxfJ4zLelq2YERwp0YDVUCYeKjDoz8WWNQj8Js42uQn0oOFrMPIY_4zQe8or1B5D2xwKA2kOhgFDKP1S1acc_W1gYVnVqzIx3UHSPU02T-ueivKxUx6cjPA8LKsgQTgir7q4"/>
+<div class="max-w-[1440px] mx-auto px-8 lg:px-16 relative z-10 text-center">
+<h2 class="font-display-xl text-display-xl mb-8">Ready for the Nexus Transition?</h2>
+<p class="font-body-lg text-on-surface-variant max-w-2xl mx-auto mb-12">
+                Join the 400+ institutional partners who have integrated into our global ecosystem.
+            </p>
+<button class="bg-primary text-on-primary px-12 py-5 rounded-lg font-headline-md text-lg font-bold hover:shadow-[0_0_40px_rgba(183,196,255,0.3)] transition-all active:scale-95">
+                Join The Future
+            </button>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full border-t border-white/5 mt-32 bg-slate-950">
+<div class="max-w-[1440px] mx-auto py-16 px-8 lg:px-16 flex flex-col md:flex-row justify-between items-center gap-12">
+<div class="text-xl font-black text-white font-headline-lg uppercase">
+                NEXUS GLOBAL
+            </div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-['Space_Grotesk'] text-[10px] uppercase tracking-[0.2em] font-bold text-slate-500 hover:text-[#4862BE] transition-colors" href="#">Privacy Policy</a>
+<a class="font-['Space_Grotesk'] text-[10px] uppercase tracking-[0.2em] font-bold text-slate-500 hover:text-[#4862BE] transition-colors" href="#">Terms of Service</a>
+<a class="font-['Space_Grotesk'] text-[10px] uppercase tracking-[0.2em] font-bold text-slate-500 hover:text-[#4862BE] transition-colors" href="#">Global Ethics</a>
+<a class="font-['Space_Grotesk'] text-[10px] uppercase tracking-[0.2em] font-bold text-slate-500 hover:text-[#4862BE] transition-colors" href="#">Cookie Settings</a>
+<a class="font-['Space_Grotesk'] text-[10px] uppercase tracking-[0.2em] font-bold text-slate-500 hover:text-[#4862BE] transition-colors" href="#">Regulatory Filings</a>
+</div>
+<div class="font-['Space_Grotesk'] text-[10px] uppercase tracking-[0.2em] font-bold text-slate-500">
+                © 2024 NEXUS GLOBAL CONGLOMERATE. ALL RIGHTS RESERVED.
+            </div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Services Overview - Nexus Global</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Inter:wght@400;600&amp;family=Noto+Serif:ital@1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-background": "#dce4e3",
+                        "outline": "#8e909d",
+                        "on-tertiary-fixed": "#141c28",
+                        "on-primary-fixed": "#001551",
+                        "secondary-container": "#00763a",
+                        "tertiary-fixed": "#dbe3f4",
+                        "surface-tint": "#b7c4ff",
+                        "on-secondary-fixed": "#00210c",
+                        "surface-container-lowest": "#081010",
+                        "tertiary": "#bfc7d8",
+                        "surface-variant": "#2e3636",
+                        "secondary": "#79db93",
+                        "background": "#0d1515",
+                        "secondary-fixed-dim": "#79db93",
+                        "surface-container-high": "#232b2b",
+                        "surface-container": "#192121",
+                        "on-secondary": "#003919",
+                        "primary": "#b7c4ff",
+                        "primary-container": "#4862be",
+                        "on-secondary-fixed-variant": "#005227",
+                        "outline-variant": "#444652",
+                        "on-primary": "#002780",
+                        "inverse-on-surface": "#2a3232",
+                        "tertiary-container": "#606877",
+                        "surface": "#0d1515",
+                        "on-tertiary": "#29313e",
+                        "on-primary-fixed-variant": "#223f9a",
+                        "inverse-primary": "#3d58b3",
+                        "surface-bright": "#333b3b",
+                        "inverse-surface": "#dce4e3",
+                        "primary-fixed": "#dce1ff",
+                        "surface-container-low": "#151d1d",
+                        "secondary-fixed": "#95f8ad",
+                        "on-tertiary-container": "#e0e8f9",
+                        "tertiary-fixed-dim": "#bfc7d8",
+                        "on-surface": "#dce4e3",
+                        "on-tertiary-fixed-variant": "#3f4755",
+                        "error": "#ffb4ab",
+                        "on-primary-container": "#e4e7ff",
+                        "surface-dim": "#0d1515",
+                        "error-container": "#93000a",
+                        "on-secondary-container": "#97f9ae",
+                        "on-surface-variant": "#c5c5d4",
+                        "surface-container-highest": "#2e3636",
+                        "on-error": "#690005",
+                        "on-error-container": "#ffdad6",
+                        "primary-fixed-dim": "#b7c4ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-edge": "64px",
+                        "container-max": "1440px",
+                        "unit": "8px",
+                        "gutter": "32px",
+                        "section-gap": "128px"
+                    },
+                    "fontFamily": {
+                        "display-xl": ["Space Grotesk"],
+                        "label-sm": ["Inter"],
+                        "headline-lg": ["Space Grotesk"],
+                        "headline-md": ["Space Grotesk"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "editorial-italic": ["Noto Serif"]
+                    },
+                    "fontSize": {
+                        "display-xl": ["72px", { "lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "700" }],
+                        "label-sm": ["12px", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-lg": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "500" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "editorial-italic": ["20px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .inner-glow {
+            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+        }
+        .radial-gradient-bg {
+            background: radial-gradient(circle at top left, rgba(183, 196, 255, 0.05) 0%, rgba(13, 21, 21, 0) 70%);
+        }
+        .nav-glow {
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-md text-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 border-b border-white/10 bg-slate-950/60 backdrop-blur-lg nav-glow">
+<div class="max-w-[1440px] mx-auto flex justify-between items-center px-8 md:px-16 h-20">
+<!-- Brand -->
+<div class="flex items-center gap-4 cursor-pointer scale-95 active:opacity-80 transition-transform">
+<span class="material-symbols-outlined text-3xl text-primary" data-weight="fill" style="font-variation-settings: 'FILL' 1;">dataset</span>
+<span class="text-2xl font-black tracking-tighter text-slate-50 dark:text-white font-display-xl">NEXUS GLOBAL</span>
+</div>
+<!-- Navigation Links (Web) -->
+<div class="hidden md:flex items-center gap-8 font-['Space_Grotesk'] font-medium tracking-tight">
+<a class="text-blue-500 dark:text-blue-400 border-b-2 border-blue-500 pb-1 hover:bg-white/5 rounded-lg transition-all duration-300 px-3 py-2" href="#">Solutions</a>
+<a class="text-slate-400 dark:text-slate-500 hover:text-slate-50 dark:hover:text-white transition-colors hover:bg-white/5 rounded-lg transition-all duration-300 px-3 py-2" href="#">Divisions</a>
+<a class="text-slate-400 dark:text-slate-500 hover:text-slate-50 dark:hover:text-white transition-colors hover:bg-white/5 rounded-lg transition-all duration-300 px-3 py-2" href="#">About</a>
+<a class="text-slate-400 dark:text-slate-500 hover:text-slate-50 dark:hover:text-white transition-colors hover:bg-white/5 rounded-lg transition-all duration-300 px-3 py-2" href="#">Insights</a>
+<a class="text-slate-400 dark:text-slate-500 hover:text-slate-50 dark:hover:text-white transition-colors hover:bg-white/5 rounded-lg transition-all duration-300 px-3 py-2" href="#">Careers</a>
+</div>
+<!-- Trailing Action -->
+<div class="flex items-center gap-4">
+<button class="hidden md:flex items-center justify-center px-6 py-2.5 bg-gradient-to-r from-primary-container to-primary/80 text-on-primary-container font-label-sm text-label-sm rounded-full inner-glow hover:brightness-110 transition-all shadow-[0_0_15px_rgba(72,98,190,0.3)]">
+                    Get in Touch
+                </button>
+<button class="md:hidden text-on-surface p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Main Canvas -->
+<main class="flex-grow pt-[140px] pb-section-gap px-gutter md:px-margin-edge w-full max-w-container-max mx-auto">
+<!-- Hero Section -->
+<header class="mb-section-gap text-center md:text-left flex flex-col md:flex-row items-end justify-between gap-8">
+<div class="max-w-3xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-surface-variant rounded-full text-tertiary font-label-sm text-label-sm uppercase tracking-widest mb-6">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                    Core Competencies
+                </div>
+<h1 class="font-display-xl text-display-xl text-on-surface mb-6">Strategic capabilities for global impact.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Architecting resilience and innovation across specialized sectors. Our divisions operate synergistically to provide comprehensive solutions for institutional partners.</p>
+</div>
+</header>
+<!-- Services Grid - Bento Style -->
+<section class="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-6 auto-rows-[320px]">
+<!-- 1. IT Services (Featured/Large) -->
+<div class="md:col-span-2 md:row-span-2 bg-surface-container rounded-xl inner-glow radial-gradient-bg p-8 flex flex-col justify-between group overflow-hidden relative card-hover transition-all duration-500 border border-outline-variant/30">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+<div class="relative z-10 flex justify-between items-start">
+<div class="w-14 h-14 rounded-lg bg-surface flex items-center justify-center inner-glow text-primary">
+<span class="material-symbols-outlined text-3xl">dns</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary bg-surface-variant px-3 py-1 rounded-full uppercase tracking-wider">TECHNOLOGY</span>
+</div>
+<div class="relative z-10 mt-12">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">IT Services</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 max-w-md">Enterprise-grade infrastructure, cloud architecture, and cybersecurity frameworks engineered for absolute resilience and scalable performance.</p>
+<a class="inline-flex items-center gap-2 text-primary font-label-sm text-label-sm uppercase tracking-wider group-hover:gap-3 transition-all" href="#">
+                        Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Decorative Graphic -->
+<div class="absolute -bottom-10 -right-10 w-64 h-64 bg-primary-container/10 rounded-full blur-3xl group-hover:bg-primary-container/20 transition-all duration-700"></div>
+</div>
+<!-- 2. Finance Services -->
+<div class="bg-surface-container rounded-xl inner-glow radial-gradient-bg p-8 flex flex-col justify-between group relative card-hover transition-all duration-500 border border-outline-variant/30">
+<div class="relative z-10 flex justify-between items-start">
+<div class="w-12 h-12 rounded-lg bg-surface flex items-center justify-center inner-glow text-secondary">
+<span class="material-symbols-outlined">account_balance</span>
+</div>
+</div>
+<div class="relative z-10">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3 text-2xl">Finance Services</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 text-sm line-clamp-3">Strategic capital allocation, risk management, and institutional wealth structuring designed for long-term stability.</p>
+<a class="inline-flex items-center gap-2 text-on-surface-variant group-hover:text-secondary font-label-sm text-label-sm uppercase tracking-wider transition-colors" href="#">
+                        Learn More <span class="material-symbols-outlined text-sm opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- 3. Government Services -->
+<div class="bg-surface-container rounded-xl inner-glow radial-gradient-bg p-8 flex flex-col justify-between group relative card-hover transition-all duration-500 border border-outline-variant/30">
+<div class="relative z-10 flex justify-between items-start">
+<div class="w-12 h-12 rounded-lg bg-surface flex items-center justify-center inner-glow text-tertiary">
+<span class="material-symbols-outlined">policy</span>
+</div>
+</div>
+<div class="relative z-10">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3 text-2xl">Government Services</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 text-sm line-clamp-3">Public sector consulting, policy implementation, and civic infrastructure management.</p>
+<a class="inline-flex items-center gap-2 text-on-surface-variant group-hover:text-tertiary font-label-sm text-label-sm uppercase tracking-wider transition-colors" href="#">
+                        Learn More <span class="material-symbols-outlined text-sm opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- 4. Management Consulting -->
+<div class="md:col-span-2 bg-surface-container rounded-xl inner-glow radial-gradient-bg p-8 flex flex-col justify-between group relative card-hover transition-all duration-500 border border-outline-variant/30">
+<div class="relative z-10 flex justify-between items-start">
+<div class="w-12 h-12 rounded-lg bg-surface flex items-center justify-center inner-glow text-surface-tint">
+<span class="material-symbols-outlined">query_stats</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary bg-surface-variant px-3 py-1 rounded-full uppercase tracking-wider">STRATEGY</span>
+</div>
+<div class="relative z-10">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3 text-2xl">Management Consulting</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 max-w-lg">Transformational advisory services optimizing operational efficiency, organizational design, and market positioning.</p>
+<a class="inline-flex items-center gap-2 text-surface-tint font-label-sm text-label-sm uppercase tracking-wider group-hover:gap-3 transition-all" href="#">
+                        Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- 5. Advertising & Marketing -->
+<div class="bg-surface-container rounded-xl inner-glow radial-gradient-bg p-8 flex flex-col justify-between group relative card-hover transition-all duration-500 border border-outline-variant/30">
+<div class="relative z-10 flex justify-between items-start">
+<div class="w-12 h-12 rounded-lg bg-surface flex items-center justify-center inner-glow text-primary-fixed">
+<span class="material-symbols-outlined">campaign</span>
+</div>
+</div>
+<div class="relative z-10">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3 text-2xl">Advertising &amp; Marketing</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 text-sm line-clamp-3">Data-driven audience acquisition, omnichannel campaign execution, and performance analytics.</p>
+<a class="inline-flex items-center gap-2 text-on-surface-variant group-hover:text-primary-fixed font-label-sm text-label-sm uppercase tracking-wider transition-colors" href="#">
+                        Learn More <span class="material-symbols-outlined text-sm opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- 6. Branding Services -->
+<div class="bg-surface-container rounded-xl inner-glow radial-gradient-bg p-8 flex flex-col justify-between group relative card-hover transition-all duration-500 border border-outline-variant/30">
+<div class="relative z-10 flex justify-between items-start">
+<div class="w-12 h-12 rounded-lg bg-surface flex items-center justify-center inner-glow text-error">
+<span class="material-symbols-outlined">brush</span>
+</div>
+</div>
+<div class="relative z-10">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3 text-2xl">Branding Services</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 text-sm line-clamp-3">Corporate identity architecture, visual systems, and brand positioning for global markets.</p>
+<a class="inline-flex items-center gap-2 text-on-surface-variant group-hover:text-error font-label-sm text-label-sm uppercase tracking-wider transition-colors" href="#">
+                        Learn More <span class="material-symbols-outlined text-sm opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- 7. Political Campaign Services (Wide) -->
+<div class="md:col-span-2 xl:col-span-2 bg-surface-container rounded-xl inner-glow radial-gradient-bg p-8 flex flex-col justify-between group relative card-hover transition-all duration-500 border border-outline-variant/30 overflow-hidden">
+<div class="absolute right-0 top-0 h-full w-1/2 opacity-20 bg-[url('https://images.unsplash.com/photo-1541872703-74c5e44368f9?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80')] bg-cover bg-center" data-alt="abstract architectural lines and geometric building structures in monochrome" style="mask-image: linear-gradient(to left, black, transparent); -webkit-mask-image: linear-gradient(to left, black, transparent);"></div>
+<div class="relative z-10 flex justify-between items-start">
+<div class="w-12 h-12 rounded-lg bg-surface flex items-center justify-center inner-glow text-on-surface">
+<span class="material-symbols-outlined">how_to_vote</span>
+</div>
+</div>
+<div class="relative z-10 max-w-md">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3 text-2xl">Political Campaign Services</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Comprehensive electoral strategy, voter data modeling, and strategic communications for high-stakes political initiatives.</p>
+<a class="inline-flex items-center gap-2 text-on-surface font-label-sm text-label-sm uppercase tracking-wider group-hover:gap-3 transition-all" href="#">
+                        Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-900 bg-slate-950 dark:bg-black mt-auto pt-32 pb-20">
+<div class="max-w-[1440px] mx-auto px-8 md:px-16 grid grid-cols-1 md:grid-cols-4 gap-12">
+<!-- Brand Column -->
+<div class="md:col-span-1">
+<div class="text-xl font-bold text-white uppercase tracking-widest font-['Space_Grotesk'] mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-blue-600 dark:text-blue-500" data-weight="fill" style="font-variation-settings: 'FILL' 1;">dataset</span>
+                    NEXUS GLOBAL
+                </div>
+<p class="font-['Space_Grotesk'] text-sm tracking-wide text-slate-500 mb-6">
+                    © 2024 Nexus Global Holdings. Architecting the future of industry.
+                </p>
+</div>
+<!-- Links Column 1 -->
+<div>
+<h4 class="font-label-sm text-label-sm text-slate-300 uppercase tracking-widest mb-6">Legal</h4>
+<ul class="space-y-4 flex flex-col font-['Space_Grotesk'] text-sm tracking-wide">
+<li><a class="text-slate-500 hover:text-slate-300 transition-colors hover:text-blue-400 underline-offset-4 hover:underline transition-all duration-200 ease-in-out" href="#">Privacy Policy</a></li>
+<li><a class="text-slate-500 hover:text-slate-300 transition-colors hover:text-blue-400 underline-offset-4 hover:underline transition-all duration-200 ease-in-out" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<!-- Links Column 2 -->
+<div>
+<h4 class="font-label-sm text-label-sm text-slate-300 uppercase tracking-widest mb-6">Corporate</h4>
+<ul class="space-y-4 flex flex-col font-['Space_Grotesk'] text-sm tracking-wide">
+<li><a class="text-slate-500 hover:text-slate-300 transition-colors hover:text-blue-400 underline-offset-4 hover:underline transition-all duration-200 ease-in-out" href="#">Investor Relations</a></li>
+<li><a class="text-slate-500 hover:text-slate-300 transition-colors hover:text-blue-400 underline-offset-4 hover:underline transition-all duration-200 ease-in-out" href="#">ESG Report</a></li>
+</ul>
+</div>
+<!-- Links Column 3 -->
+<div>
+<h4 class="font-label-sm text-label-sm text-slate-300 uppercase tracking-widest mb-6">Contact</h4>
+<ul class="space-y-4 flex flex-col font-['Space_Grotesk'] text-sm tracking-wide">
+<li><a class="text-slate-500 hover:text-slate-300 transition-colors hover:text-blue-400 underline-offset-4 hover:underline transition-all duration-200 ease-in-out" href="#">Global Offices</a></li>
+</ul>
+</div>
+</div>
+</footer>
+</body></html>

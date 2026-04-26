@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Management Consulting - Nexus Global</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600;700;900&amp;family=Noto+Serif:ital@1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-background": "#dce4e3",
+                        "outline": "#8e909d",
+                        "on-tertiary-fixed": "#141c28",
+                        "on-primary-fixed": "#001551",
+                        "secondary-container": "#00763a",
+                        "tertiary-fixed": "#dbe3f4",
+                        "surface-tint": "#b7c4ff",
+                        "on-secondary-fixed": "#00210c",
+                        "surface-container-lowest": "#081010",
+                        "tertiary": "#bfc7d8",
+                        "surface-variant": "#2e3636",
+                        "secondary": "#79db93",
+                        "background": "#0d1515",
+                        "secondary-fixed-dim": "#79db93",
+                        "surface-container-high": "#232b2b",
+                        "surface-container": "#192121",
+                        "on-secondary": "#003919",
+                        "primary": "#b7c4ff",
+                        "primary-container": "#4862be",
+                        "on-secondary-fixed-variant": "#005227",
+                        "outline-variant": "#444652",
+                        "on-primary": "#002780",
+                        "inverse-on-surface": "#2a3232",
+                        "tertiary-container": "#606877",
+                        "surface": "#0d1515",
+                        "on-tertiary": "#29313e",
+                        "on-primary-fixed-variant": "#223f9a",
+                        "inverse-primary": "#3d58b3",
+                        "surface-bright": "#333b3b",
+                        "inverse-surface": "#dce4e3",
+                        "primary-fixed": "#dce1ff",
+                        "surface-container-low": "#151d1d",
+                        "secondary-fixed": "#95f8ad",
+                        "on-tertiary-container": "#e0e8f9",
+                        "tertiary-fixed-dim": "#bfc7d8",
+                        "on-surface": "#dce4e3",
+                        "on-tertiary-fixed-variant": "#3f4755",
+                        "error": "#ffb4ab",
+                        "on-primary-container": "#e4e7ff",
+                        "surface-dim": "#0d1515",
+                        "error-container": "#93000a",
+                        "on-secondary-container": "#97f9ae",
+                        "on-surface-variant": "#c5c5d4",
+                        "surface-container-highest": "#2e3636",
+                        "on-error": "#690005",
+                        "on-error-container": "#ffdad6",
+                        "primary-fixed-dim": "#b7c4ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-edge": "64px",
+                        "container-max": "1440px",
+                        "unit": "8px",
+                        "gutter": "32px",
+                        "section-gap": "128px"
+                    },
+                    "fontFamily": {
+                        "display-xl": ["Space Grotesk"],
+                        "label-sm": ["Inter"],
+                        "headline-lg": ["Space Grotesk"],
+                        "headline-md": ["Space Grotesk"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "editorial-italic": ["Noto Serif"]
+                    },
+                    "fontSize": {
+                        "display-xl": ["72px", { "lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "700" }],
+                        "label-sm": ["12px", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-lg": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "500" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "editorial-italic": ["20px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .inner-glow { box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1); }
+        .glass-panel { background: rgba(33, 41, 54, 0.4); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .radial-glow { background: radial-gradient(circle at top left, rgba(183, 196, 255, 0.05) 0%, transparent 70%); }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 border-b border-white/10 bg-slate-950/60 backdrop-blur-lg shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
+<div class="max-w-[1440px] mx-auto flex justify-between items-center px-8 md:px-16 h-20 1px inner-glow border-white/10">
+<div class="text-2xl font-black tracking-tighter text-slate-50 dark:text-white">
+                NEXUS GLOBAL
+            </div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-blue-500 dark:text-blue-400 border-b-2 border-blue-500 pb-1 font-['Space_Grotesk'] font-medium tracking-tight" href="#">Solutions</a>
+<a class="text-slate-400 dark:text-slate-500 hover:text-slate-50 dark:hover:text-white transition-colors hover:bg-white/5 rounded-lg transition-all duration-300 px-3 py-2 font-['Space_Grotesk'] font-medium tracking-tight" href="#">Divisions</a>
+<a class="text-slate-400 dark:text-slate-500 hover:text-slate-50 dark:hover:text-white transition-colors hover:bg-white/5 rounded-lg transition-all duration-300 px-3 py-2 font-['Space_Grotesk'] font-medium tracking-tight" href="#">About</a>
+<a class="text-slate-400 dark:text-slate-500 hover:text-slate-50 dark:hover:text-white transition-colors hover:bg-white/5 rounded-lg transition-all duration-300 px-3 py-2 font-['Space_Grotesk'] font-medium tracking-tight" href="#">Insights</a>
+<a class="text-slate-400 dark:text-slate-500 hover:text-slate-50 dark:hover:text-white transition-colors hover:bg-white/5 rounded-lg transition-all duration-300 px-3 py-2 font-['Space_Grotesk'] font-medium tracking-tight" href="#">Careers</a>
+</div>
+<div class="flex items-center space-x-6">
+<button class="scale-95 active:opacity-80 transition-transform">
+<span class="material-symbols-outlined text-on-background" data-icon="search">search</span>
+</button>
+<button class="bg-gradient-to-r from-primary-container to-inverse-primary text-on-primary-container font-label-sm text-label-sm px-6 py-3 rounded border border-white/10 hover:border-white/30 transition-all shadow-lg inner-glow">
+                    Get in Touch
+                </button>
+</div>
+</div>
+</nav>
+<main class="flex-grow pt-20">
+<!-- Hero Section -->
+<section class="relative w-full min-h-[819px] flex items-center justify-center overflow-hidden border-b border-surface-variant">
+<div class="absolute inset-0 bg-cover bg-center opacity-40 mix-blend-luminosity scale-105" data-alt="Aerial view of a modern, sleek corporate skyscraper at night with glowing windows, representing global business and management consulting. Clean, sharp lines, premium aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCR9TDuMDKFDA9EixIQ4H4urNRTAc3iIzGYqdyJqsOOrTKiqVjRRvEforH0hyaNc9qoIn1xP4_VjIxTly1GWSdN7eUgs7gnKYs2xW5vuOAd4H60-_YeCoip1gPaond06weTiJinIUhMyXAPdpMKr6rpW-0gXTmrzcFbBg86cY66egNINMp5eFuZY3alOkT0LxZ4gLY3XvgjiyVMPSEPDF68-yAoKi8V6CahuG5ame__LNS9v7U1AehY22Sk_1Ml3qttYCCWcNlGnvc');"></div>
+<div class="absolute inset-0 bg-gradient-to-b from-background/60 via-background/20 to-background"></div>
+<div class="relative z-10 max-w-[1440px] mx-auto px-8 md:px-margin-edge text-center w-full">
+<div class="inline-block mb-6 px-4 py-1.5 rounded-full glass-panel inner-glow">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-widest">Management Consulting</span>
+</div>
+<h1 class="font-display-xl text-display-xl text-on-background mb-8 max-w-4xl mx-auto leading-tight">
+                    Strategic Leadership for <span class="text-primary">Global Enterprise</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-12">
+                    Navigating complex markets with precision. We partner with executive teams to drive transformational growth, operational excellence, and organizational resilience.
+                </p>
+</div>
+</section>
+<!-- Core Offerings (Bento Grid) -->
+<section class="max-w-[1440px] mx-auto px-8 md:px-margin-edge py-section-gap">
+<div class="mb-16">
+<h2 class="font-headline-lg text-headline-lg text-on-background mb-4">Core Competencies</h2>
+<div class="w-24 h-1 bg-primary/30 rounded"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Card 1 (Large) -->
+<div class="md:col-span-8 glass-panel rounded-xl p-10 radial-glow flex flex-col justify-between group transition-all duration-500 hover:border-primary/30 min-h-[400px] relative overflow-hidden">
+<div class="absolute right-0 top-0 opacity-10 transition-transform duration-700 group-hover:scale-110 group-hover:opacity-20 pointer-events-none">
+<span class="material-symbols-outlined text-[200px]" data-icon="strategy" data-weight="fill" style="font-variation-settings: 'FILL' 1;">strategy</span>
+</div>
+<div>
+<div class="w-12 h-12 rounded bg-surface-variant flex items-center justify-center mb-6 border border-white/5">
+<span class="material-symbols-outlined text-primary" data-icon="insights">insights</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-background mb-4">Business Strategy</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+                            Architecting sustainable competitive advantages. We analyze market dynamics to formulate robust corporate strategies that accelerate growth and mitigate risk in volatile environments.
+                        </p>
+</div>
+<div class="mt-8 flex items-center text-primary font-label-sm text-label-sm uppercase tracking-wide cursor-pointer group-hover:text-primary-fixed transition-colors">
+                        Explore Capability <span class="material-symbols-outlined ml-2 text-sm transition-transform group-hover:translate-x-2" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+<!-- Card 2 (Small) -->
+<div class="md:col-span-4 glass-panel rounded-xl p-8 radial-glow flex flex-col justify-between group transition-all duration-500 hover:border-primary/30">
+<div>
+<div class="w-10 h-10 rounded bg-surface-variant flex items-center justify-center mb-6 border border-white/5">
+<span class="material-symbols-outlined text-secondary" data-icon="settings_suggest">settings_suggest</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-background text-[24px] mb-3">Operations Optimization</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Streamlining global supply chains and internal processes to maximize efficiency, reduce waste, and improve bottom-line performance.
+                        </p>
+</div>
+</div>
+<!-- Card 3 (Small) -->
+<div class="md:col-span-5 glass-panel rounded-xl p-8 radial-glow flex flex-col justify-between group transition-all duration-500 hover:border-primary/30">
+<div>
+<div class="w-10 h-10 rounded bg-surface-variant flex items-center justify-center mb-6 border border-white/5">
+<span class="material-symbols-outlined text-tertiary-fixed" data-icon="groups">groups</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-background text-[24px] mb-3">HR Consulting</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Designing agile organizational structures. We help align your human capital with strategic objectives to foster innovation and leadership retention.
+                        </p>
+</div>
+</div>
+<!-- Card 4 (Medium) -->
+<div class="md:col-span-7 glass-panel rounded-xl p-8 radial-glow flex flex-col justify-between group transition-all duration-500 hover:border-primary/30 relative overflow-hidden">
+<div class="absolute right-0 bottom-0 opacity-10 transition-transform duration-700 group-hover:scale-110 group-hover:opacity-20 pointer-events-none">
+<span class="material-symbols-outlined text-[150px]" data-icon="trending_up" data-weight="fill" style="font-variation-settings: 'FILL' 1;">trending_up</span>
+</div>
+<div>
+<div class="w-10 h-10 rounded bg-surface-variant flex items-center justify-center mb-6 border border-white/5">
+<span class="material-symbols-outlined text-primary" data-icon="account_tree">account_tree</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-background text-[24px] mb-3">Growth Planning</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-lg">
+                            Identifying adjacencies and expanding market footprints. Comprehensive M&amp;A advisory, market entry strategies, and portfolio optimization for scaled enterprise.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Process Section (Asymmetric Timeline) -->
+<section class="bg-surface-container-low py-section-gap border-y border-surface-variant relative overflow-hidden">
+<div class="max-w-[1440px] mx-auto px-8 md:px-margin-edge">
+<div class="flex flex-col md:flex-row gap-16">
+<div class="md:w-1/3">
+<div class="sticky top-32">
+<h2 class="font-headline-lg text-headline-lg text-on-background mb-6">Methodology</h2>
+<p class="font-editorial-italic text-editorial-italic text-on-surface-variant mb-8">
+                                A rigorous, data-driven approach to transformational change.
+                            </p>
+</div>
+</div>
+<div class="md:w-2/3 space-y-12 relative">
+<!-- Connecting Line -->
+<div class="absolute left-[23px] top-4 bottom-4 w-px bg-surface-variant hidden md:block"></div>
+<!-- Step 1 -->
+<div class="flex gap-8 relative z-10">
+<div class="w-12 h-12 rounded-full bg-surface border-2 border-surface-variant flex items-center justify-center flex-shrink-0 font-label-sm text-label-sm text-outline">01</div>
+<div class="glass-panel p-8 rounded-lg flex-grow radial-glow border-l-2 border-l-primary/50">
+<h4 class="font-headline-md text-headline-md text-[20px] text-on-background mb-2">Understanding</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Deep diagnostic analysis of current state operations, financial baseline, and cultural dynamics.</p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="flex gap-8 relative z-10">
+<div class="w-12 h-12 rounded-full bg-surface border-2 border-surface-variant flex items-center justify-center flex-shrink-0 font-label-sm text-label-sm text-outline">02</div>
+<div class="glass-panel p-8 rounded-lg flex-grow radial-glow">
+<h4 class="font-headline-md text-headline-md text-[20px] text-on-background mb-2">Strategy</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Hypothesis-driven formulation of strategic alternatives and selection of the optimal path forward.</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex gap-8 relative z-10">
+<div class="w-12 h-12 rounded-full bg-surface border-2 border-surface-variant flex items-center justify-center flex-shrink-0 font-label-sm text-label-sm text-outline">03</div>
+<div class="glass-panel p-8 rounded-lg flex-grow radial-glow">
+<h4 class="font-headline-md text-headline-md text-[20px] text-on-background mb-2">Execution</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Rigorous implementation planning, establishing PMOs, and driving change management initiatives across the enterprise.</p>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="flex gap-8 relative z-10">
+<div class="w-12 h-12 rounded-full bg-surface border-2 border-surface-variant flex items-center justify-center flex-shrink-0 font-label-sm text-label-sm text-outline">04</div>
+<div class="glass-panel p-8 rounded-lg flex-grow radial-glow">
+<h4 class="font-headline-md text-headline-md text-[20px] text-on-background mb-2">Optimization</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Iterative refinement of executed strategies, adjusting to market feedback and internal performance metrics.</p>
+</div>
+</div>
+<!-- Step 5 -->
+<div class="flex gap-8 relative z-10">
+<div class="w-12 h-12 rounded-full bg-surface border-2 border-surface-variant flex items-center justify-center flex-shrink-0 font-label-sm text-label-sm text-outline">05</div>
+<div class="glass-panel p-8 rounded-lg flex-grow radial-glow">
+<h4 class="font-headline-md text-headline-md text-[20px] text-on-background mb-2">Reporting</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Establishing ongoing KPI dashboards and executive reporting frameworks to ensure sustained value capture.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-900 bg-slate-950 dark:bg-black relative z-10" style="padding-top: 128px;">
+<div class="max-w-[1440px] mx-auto px-8 md:px-16 py-20 grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-4 flex justify-between items-end border-b border-white/10 pb-8 mb-8">
+<div class="text-xl font-bold text-white uppercase tracking-widest font-['Space_Grotesk']">
+                    NEXUS GLOBAL
+                </div>
+</div>
+<div class="col-span-1 md:col-span-2">
+<p class="font-['Space_Grotesk'] text-sm tracking-wide text-slate-500">
+                    © 2024 Nexus Global Holdings. Architecting the future of industry.
+                </p>
+</div>
+<div class="col-span-1 md:col-span-2 flex justify-end gap-6 flex-wrap">
+<a class="font-['Space_Grotesk'] text-sm tracking-wide text-slate-500 hover:text-slate-300 transition-colors hover:text-blue-400 underline-offset-4 hover:underline transition-all duration-200 ease-in-out" href="#">Privacy Policy</a>
+<a class="font-['Space_Grotesk'] text-sm tracking-wide text-slate-500 hover:text-slate-300 transition-colors hover:text-blue-400 underline-offset-4 hover:underline transition-all duration-200 ease-in-out" href="#">Terms of Service</a>
+<a class="font-['Space_Grotesk'] text-sm tracking-wide text-slate-500 hover:text-slate-300 transition-colors hover:text-blue-400 underline-offset-4 hover:underline transition-all duration-200 ease-in-out" href="#">Investor Relations</a>
+<a class="font-['Space_Grotesk'] text-sm tracking-wide text-slate-500 hover:text-slate-300 transition-colors hover:text-blue-400 underline-offset-4 hover:underline transition-all duration-200 ease-in-out" href="#">ESG Report</a>
+<a class="font-['Space_Grotesk'] text-sm tracking-wide text-slate-500 hover:text-slate-300 transition-colors hover:text-blue-400 underline-offset-4 hover:underline transition-all duration-200 ease-in-out" href="#">Global Offices</a>
+</div>
+</div>
+</footer>
+</body></html>

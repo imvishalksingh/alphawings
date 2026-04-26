@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nexus Global | Government Services</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600;700;900&amp;family=Noto+Serif:ital@0;1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-background": "#dce4e3",
+                        "outline": "#8e909d",
+                        "on-tertiary-fixed": "#141c28",
+                        "on-primary-fixed": "#001551",
+                        "secondary-container": "#00763a",
+                        "tertiary-fixed": "#dbe3f4",
+                        "surface-tint": "#b7c4ff",
+                        "on-secondary-fixed": "#00210c",
+                        "surface-container-lowest": "#081010",
+                        "tertiary": "#bfc7d8",
+                        "surface-variant": "#2e3636",
+                        "secondary": "#79db93",
+                        "background": "#0d1515",
+                        "secondary-fixed-dim": "#79db93",
+                        "surface-container-high": "#232b2b",
+                        "surface-container": "#192121",
+                        "on-secondary": "#003919",
+                        "primary": "#b7c4ff",
+                        "primary-container": "#4862be",
+                        "on-secondary-fixed-variant": "#005227",
+                        "outline-variant": "#444652",
+                        "on-primary": "#002780",
+                        "inverse-on-surface": "#2a3232",
+                        "tertiary-container": "#606877",
+                        "surface": "#0d1515",
+                        "on-tertiary": "#29313e",
+                        "on-primary-fixed-variant": "#223f9a",
+                        "inverse-primary": "#3d58b3",
+                        "surface-bright": "#333b3b",
+                        "inverse-surface": "#dce4e3",
+                        "primary-fixed": "#dce1ff",
+                        "surface-container-low": "#151d1d",
+                        "secondary-fixed": "#95f8ad",
+                        "on-tertiary-container": "#e0e8f9",
+                        "tertiary-fixed-dim": "#bfc7d8",
+                        "on-surface": "#dce4e3",
+                        "on-tertiary-fixed-variant": "#3f4755",
+                        "error": "#ffb4ab",
+                        "on-primary-container": "#e4e7ff",
+                        "surface-dim": "#0d1515",
+                        "error-container": "#93000a",
+                        "on-secondary-container": "#97f9ae",
+                        "on-surface-variant": "#c5c5d4",
+                        "surface-container-highest": "#2e3636",
+                        "on-error": "#690005",
+                        "on-error-container": "#ffdad6",
+                        "primary-fixed-dim": "#b7c4ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-edge": "64px",
+                        "container-max": "1440px",
+                        "unit": "8px",
+                        "gutter": "32px",
+                        "section-gap": "128px"
+                    },
+                    "fontFamily": {
+                        "display-xl": ["Space Grotesk"],
+                        "label-sm": ["Inter"],
+                        "headline-lg": ["Space Grotesk"],
+                        "headline-md": ["Space Grotesk"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "editorial-italic": ["Noto Serif"]
+                    },
+                    "fontSize": {
+                        "display-xl": ["72px", { "lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "700" }],
+                        "label-sm": ["12px", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-lg": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "500" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "editorial-italic": ["20px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .inner-glow { box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1); }
+        .glass-panel { background: rgba(33, 41, 54, 0.4); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.05); }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 border-b border-white/10 bg-slate-950/60 backdrop-blur-lg shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
+<div class="max-w-[1440px] mx-auto flex justify-between items-center px-8 md:px-16 h-20">
+<a class="text-2xl font-black tracking-tighter text-slate-50 dark:text-white font-['Space_Grotesk']" href="#">NEXUS GLOBAL</a>
+<div class="hidden md:flex items-center space-x-8 font-['Space_Grotesk'] font-medium tracking-tight">
+<a class="text-slate-400 dark:text-slate-500 hover:text-slate-50 dark:hover:text-white transition-colors" href="#">Solutions</a>
+<a class="text-blue-500 dark:text-blue-400 border-b-2 border-blue-500 pb-1" href="#">Divisions</a>
+<a class="text-slate-400 dark:text-slate-500 hover:text-slate-50 dark:hover:text-white transition-colors" href="#">About</a>
+<a class="text-slate-400 dark:text-slate-500 hover:text-slate-50 dark:hover:text-white transition-colors" href="#">Insights</a>
+<a class="text-slate-400 dark:text-slate-500 hover:text-slate-50 dark:hover:text-white transition-colors" href="#">Careers</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-slate-400 hover:text-white transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">search</span>
+</button>
+<button class="bg-gradient-to-r from-primary-container to-primary/80 text-on-primary-container px-6 py-2.5 rounded-lg font-label-sm text-label-sm inner-glow hover:bg-white/5 transition-all duration-300 scale-95 active:opacity-80">
+                    Get in Touch
+                </button>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-section-gap">
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-margin-edge mb-section-gap">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center min-h-[614px]">
+<div class="lg:col-span-7 z-10">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high border border-outline-variant mb-6">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-tertiary tracking-widest uppercase">Government Services</span>
+</div>
+<h1 class="font-display-xl text-display-xl text-on-background mb-8 leading-tight">
+                        Digital Public <br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-surface-tint">Infrastructure</span> &amp; Consulting
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-10">
+                        Architecting resilient, secure, and highly efficient digital ecosystems for public sector entities worldwide. We deliver institutional-grade solutions bridging legacy systems with tomorrow's technological mandates.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-gradient-to-r from-primary-container to-primary/80 text-on-primary-container px-8 py-4 rounded-lg font-label-sm text-label-sm inner-glow hover:opacity-90 transition-opacity">
+                            Initiate Consultation
+                        </button>
+<button class="glass-panel text-on-background px-8 py-4 rounded-lg font-label-sm text-label-sm hover:bg-surface-container-highest transition-colors">
+                            View Case Studies
+                        </button>
+</div>
+</div>
+<div class="lg:col-span-5 relative h-full min-h-[400px] rounded-xl overflow-hidden glass-panel">
+<img alt="Abstract representation of global governance and digital public infrastructure. Interconnected glowing lines forming a map of the world, shield icons for security, and clean architectural elements." class="absolute inset-0 w-full h-full object-cover opacity-60" data-alt="Abstract representation of global governance and digital public infrastructure. Interconnected glowing lines forming a map of the world, shield icons for security, and clean architectural elements." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNAqithVypdA-crzjKRtYN1XneWk2dMcPYWdlGR6ytnr8-l6Rb5mQ4QRTD7skGMdsOqvBu_mEEJ8Mqq7Tyn1EsL2Zs9k6ssxEXUrXxcld2CuIfJLIps9pCbMXOgOKuYbKE_cxhJlBvRdDN85MBlQteBph4S7x3VlKoQpfmfYpiBZ0pPaxNWTANxrN9dg6rlp36sZjTomuCbMtsLDj9tiHqlgp-GX-17ocvOO6Uc9gRP23Ihr-mebrvYp7XMB0w_0Dj5GGrdKdWygE"/>
+<div class="absolute inset-0 bg-gradient-to-tr from-background via-transparent to-primary/10"></div>
+</div>
+</div>
+</section>
+<!-- Core Offerings (Bento Grid) -->
+<section class="max-w-container-max mx-auto px-margin-edge mb-section-gap">
+<div class="mb-16">
+<h2 class="font-headline-lg text-headline-lg text-on-background mb-4">Strategic Offerings</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl">Comprehensive advisory and implementation services tailored for complex regulatory environments.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<div class="glass-panel p-10 rounded-xl relative overflow-hidden group hover:bg-surface-container-high transition-all duration-500">
+<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<span class="material-symbols-outlined text-4xl text-primary mb-6" style="font-variation-settings: 'FILL' 1;">description</span>
+<h3 class="font-headline-md text-headline-md text-on-background mb-4">Documentation Support</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Rigorous documentation structuring, ensuring absolute compliance with federal frameworks and archival standards.
+                    </p>
+</div>
+<!-- Card 2 -->
+<div class="glass-panel p-10 rounded-xl relative overflow-hidden group hover:bg-surface-container-high transition-all duration-500 md:col-span-2">
+<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-primary/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+<span class="material-symbols-outlined text-4xl text-primary mb-6" style="font-variation-settings: 'FILL' 1;">account_tree</span>
+<h3 class="font-headline-md text-headline-md text-on-background mb-4">Digital Services Consulting</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+                        End-to-end modernization of citizen-facing portals and internal operational architectures. We deploy scalable, zero-trust infrastructure designed for high-availability public sector demands.
+                    </p>
+</div>
+<!-- Card 3 -->
+<div class="glass-panel p-10 rounded-xl relative overflow-hidden group hover:bg-surface-container-high transition-all duration-500 md:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+<div>
+<span class="material-symbols-outlined text-4xl text-primary mb-6" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<h3 class="font-headline-md text-headline-md text-on-background mb-4">Compliance Advisory</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Navigating intricate legislative requirements. Our experts provide proactive risk mitigation, audit readiness, and continuous compliance monitoring against evolving global standards.
+                        </p>
+</div>
+<div class="h-48 rounded-lg bg-surface-container-lowest border border-outline-variant/30 flex items-center justify-center relative overflow-hidden">
+<div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary/10 to-transparent"></div>
+<div class="flex gap-4 opacity-50">
+<div class="w-16 h-16 rounded border border-outline-variant/50 flex items-center justify-center"><span class="material-symbols-outlined">security</span></div>
+<div class="w-16 h-16 rounded border border-outline-variant/50 flex items-center justify-center"><span class="material-symbols-outlined">gavel</span></div>
+<div class="w-16 h-16 rounded border border-outline-variant/50 flex items-center justify-center"><span class="material-symbols-outlined">policy</span></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Process Section -->
+<section class="max-w-container-max mx-auto px-margin-edge">
+<div class="border-t border-outline-variant/30 pt-16">
+<h2 class="font-headline-lg text-headline-lg text-on-background mb-16 text-center">Execution Methodology</h2>
+<div class="grid grid-cols-1 md:grid-cols-5 gap-4 relative">
+<!-- Connecting Line -->
+<div class="hidden md:block absolute top-1/2 left-0 w-full h-[1px] bg-outline-variant/30 -z-10 -translate-y-1/2"></div>
+<!-- Step 1 -->
+<div class="glass-panel p-6 rounded-lg text-center relative group">
+<div class="w-12 h-12 mx-auto bg-surface-container-highest border border-primary/30 rounded-full flex items-center justify-center mb-4 group-hover:border-primary transition-colors">
+<span class="font-label-sm text-label-sm text-primary">01</span>
+</div>
+<h4 class="font-label-sm text-label-sm text-on-background tracking-wider uppercase mb-2">Understanding</h4>
+</div>
+<!-- Step 2 -->
+<div class="glass-panel p-6 rounded-lg text-center relative group">
+<div class="w-12 h-12 mx-auto bg-surface-container-highest border border-primary/30 rounded-full flex items-center justify-center mb-4 group-hover:border-primary transition-colors">
+<span class="font-label-sm text-label-sm text-primary">02</span>
+</div>
+<h4 class="font-label-sm text-label-sm text-on-background tracking-wider uppercase mb-2">Strategy</h4>
+</div>
+<!-- Step 3 -->
+<div class="glass-panel p-6 rounded-lg text-center relative group border-primary/30">
+<div class="w-12 h-12 mx-auto bg-primary-container text-on-primary-container rounded-full flex items-center justify-center mb-4 shadow-[0_0_15px_rgba(183,196,255,0.3)]">
+<span class="font-label-sm text-label-sm">03</span>
+</div>
+<h4 class="font-label-sm text-label-sm text-primary tracking-wider uppercase mb-2">Execution</h4>
+</div>
+<!-- Step 4 -->
+<div class="glass-panel p-6 rounded-lg text-center relative group">
+<div class="w-12 h-12 mx-auto bg-surface-container-highest border border-primary/30 rounded-full flex items-center justify-center mb-4 group-hover:border-primary transition-colors">
+<span class="font-label-sm text-label-sm text-primary">04</span>
+</div>
+<h4 class="font-label-sm text-label-sm text-on-background tracking-wider uppercase mb-2">Optimization</h4>
+</div>
+<!-- Step 5 -->
+<div class="glass-panel p-6 rounded-lg text-center relative group">
+<div class="w-12 h-12 mx-auto bg-surface-container-highest border border-primary/30 rounded-full flex items-center justify-center mb-4 group-hover:border-primary transition-colors">
+<span class="font-label-sm text-label-sm text-primary">05</span>
+</div>
+<h4 class="font-label-sm text-label-sm text-on-background tracking-wider uppercase mb-2">Reporting</h4>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-950 dark:bg-black w-full border-t border-slate-900 tonal shift with 128px top padding">
+<div class="max-w-[1440px] mx-auto px-8 md:px-16 py-20 grid grid-cols-1 md:grid-cols-4 gap-12 font-['Space_Grotesk'] text-sm tracking-wide">
+<div class="col-span-1 md:col-span-2">
+<h3 class="text-xl font-bold text-white uppercase tracking-widest mb-6">NEXUS GLOBAL</h3>
+<p class="text-slate-500 max-w-sm mb-6">Architecting the future of industry through precision, compliance, and technological superiority.</p>
+<p class="text-slate-600 dark:text-blue-500">© 2024 Nexus Global Holdings. Architecting the future of industry.</p>
+</div>
+<div>
+<h4 class="text-white font-semibold mb-4 uppercase tracking-wider text-xs">Legal &amp; Compliance</h4>
+<ul class="space-y-3">
+<li><a class="text-slate-500 hover:text-slate-300 transition-colors hover:text-blue-400 underline-offset-4 hover:underline transition-all duration-200 ease-in-out" href="#">Privacy Policy</a></li>
+<li><a class="text-slate-500 hover:text-slate-300 transition-colors hover:text-blue-400 underline-offset-4 hover:underline transition-all duration-200 ease-in-out" href="#">Terms of Service</a></li>
+<li><a class="text-slate-500 hover:text-slate-300 transition-colors hover:text-blue-400 underline-offset-4 hover:underline transition-all duration-200 ease-in-out" href="#">Investor Relations</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-semibold mb-4 uppercase tracking-wider text-xs">Corporate</h4>
+<ul class="space-y-3">
+<li><a class="text-slate-500 hover:text-slate-300 transition-colors hover:text-blue-400 underline-offset-4 hover:underline transition-all duration-200 ease-in-out" href="#">ESG Report</a></li>
+<li><a class="text-slate-500 hover:text-slate-300 transition-colors hover:text-blue-400 underline-offset-4 hover:underline transition-all duration-200 ease-in-out" href="#">Global Offices</a></li>
+</ul>
+</div>
+</div>
+</footer>
+</body></html>

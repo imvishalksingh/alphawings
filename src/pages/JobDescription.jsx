@@ -9,7 +9,7 @@ export default function JobDescription() {
 <div className="absolute inset-0 bg-background/80 backdrop-blur-sm"></div>
 <div className="relative max-w-container-max mx-auto glass-panel rounded-xl p-12 lg:p-16 flex flex-col md:flex-row items-start justify-between gap-8 shadow-[0_20px_50px_rgba(0,39,128,0.1)]">
 <div className="max-w-3xl">
-<div className="flex gap-4 mb-6">
+<div className="flex flex-wrap gap-4 mb-6">
 <span className="bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm px-3 py-1 rounded-full uppercase tracking-wider">Alpha IT Architecture</span>
 <span className="bg-surface-variant text-on-surface-variant font-label-sm text-label-sm px-3 py-1 rounded-full flex items-center gap-1"><span className="material-symbols-outlined text-[14px]">location_on</span> San Francisco / Hybrid</span>
 </div>

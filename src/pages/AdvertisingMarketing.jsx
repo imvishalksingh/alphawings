@@ -19,38 +19,38 @@ export default function AdvertisingMarketing() {
 <h2 className="font-headline-md text-headline-md text-on-background mb-12">Core Capabilities</h2>
 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-<div className="md:col-span-2 glass-panel rounded-xl p-8 flex flex-col justify-between relative overflow-hidden group">
+<Link to="/services/marketing/digital-marketing" className="md:col-span-2 glass-panel rounded-xl p-8 flex flex-col justify-between relative overflow-hidden group block cursor-pointer">
 <img alt="Digital Marketing Concept" className="absolute top-0 right-0 w-full h-full object-cover opacity-20 group-hover:opacity-30 transition-opacity duration-500 z-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl6dDyf_g1JzWc3T_1JUqqYQ_LeMXA6fclplj38D4UKbVeSyjv6IW2fvyyo4aMZLCNO2jLASyGkIFOGgQ86mJq3_0stSj6UbTN5bWN9-2A--XirJGJQXxmris8D55jbrKCfGtJ94RNKQ3TS4ClHGyeF2JVHl09ANa1PttSxDLfYIry4E81nIkbrSjuF33c7_Tk6ZAQXdyr124iGaG_MhIpc_uyB6MCW7GHB45QrLlAwQvv7hOAs3oMMfmQzmOgtDzJt8-CgNvvpLU"/>
 <div className="relative z-10">
 <span className="material-symbols-outlined text-4xl text-primary mb-6">campaign</span>
 <h3 className="font-headline-md text-headline-md text-on-background mb-4">Digital Marketing</h3>
 <p className="font-body-md text-body-md text-outline max-w-md">Comprehensive multi-channel strategies designed to capture market share and drive sustainable growth across digital ecosystems.</p>
 </div>
-</div>
+</Link>
 
-<div className="glass-panel rounded-xl p-8 relative overflow-hidden">
+<Link to="/services/marketing/social-media" className="glass-panel rounded-xl p-8 relative overflow-hidden block cursor-pointer group hover:bg-surface-container-high transition-colors">
 <span className="material-symbols-outlined text-4xl text-secondary mb-6">share</span>
 <h3 className="font-headline-md text-headline-md text-on-background mb-4 text-2xl">Social Media</h3>
 <p className="font-body-md text-body-md text-outline">Community building and engagement through targeted social strategies.</p>
-</div>
+</Link>
 
-<div className="glass-panel rounded-xl p-8 relative overflow-hidden">
+<Link to="/services/marketing/seo" className="glass-panel rounded-xl p-8 relative overflow-hidden block cursor-pointer group hover:bg-surface-container-high transition-colors">
 <span className="material-symbols-outlined text-4xl text-tertiary mb-6">search_insights</span>
 <h3 className="font-headline-md text-headline-md text-on-background mb-4 text-2xl">SEO</h3>
 <p className="font-body-md text-body-md text-outline">Technical and content-driven search engine optimization for organic dominance.</p>
-</div>
+</Link>
 
-<div className="glass-panel rounded-xl p-8 relative overflow-hidden">
+<Link to="/services/marketing/paid-ads" className="glass-panel rounded-xl p-8 relative overflow-hidden block cursor-pointer group hover:bg-surface-container-high transition-colors">
 <span className="material-symbols-outlined text-4xl text-error mb-6">ads_click</span>
 <h3 className="font-headline-md text-headline-md text-on-background mb-4 text-2xl">Paid Ads</h3>
 <p className="font-body-md text-body-md text-outline">High-conversion performance marketing campaigns across major networks.</p>
-</div>
+</Link>
 
-<div className="glass-panel rounded-xl p-8 relative overflow-hidden">
+<Link to="/services/marketing/campaign-strategy" className="glass-panel rounded-xl p-8 relative overflow-hidden block cursor-pointer group hover:bg-surface-container-high transition-colors">
 <span className="material-symbols-outlined text-4xl text-primary mb-6">lightbulb</span>
 <h3 className="font-headline-md text-headline-md text-on-background mb-4 text-2xl">Campaign Strategy</h3>
 <p className="font-body-md text-body-md text-outline">End-to-end campaign conceptualization and strategic planning.</p>
-</div>
+</Link>
 </div>
 </section>
 
@@ -98,6 +98,31 @@ export default function AdvertisingMarketing() {
 </div>
 </div>
 </section>
+
+<section className="max-w-container-max mx-auto px-margin-edge py-section-gap border-t border-outline-variant/30 mt-16">
+    <div className="mb-12 text-center">
+        <h2 className="font-headline-lg text-headline-lg text-on-background mb-4">Why Partner With Us?</h2>
+        <p className="font-body-md text-on-surface-variant max-w-2xl mx-auto">We provide unparalleled expertise to supercharge your global marketing efforts.</p>
+    </div>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="glass-panel p-8 text-center rounded-xl">
+            <span className="material-symbols-outlined text-4xl text-primary mb-4">globe</span>
+            <h4 className="font-headline-md text-on-background mb-2">Global Reach</h4>
+            <p className="font-body-md text-on-surface-variant">Access localized expertise in over 40+ international markets, scaling your brand worldwide.</p>
+        </div>
+        <div className="glass-panel p-8 text-center rounded-xl">
+            <span className="material-symbols-outlined text-4xl text-secondary mb-4">insights</span>
+            <h4 className="font-headline-md text-on-background mb-2">Data-Driven Approach</h4>
+            <p className="font-body-md text-on-surface-variant">Every decision is backed by advanced analytics, predictive modeling, and rigorous testing.</p>
+        </div>
+        <div className="glass-panel p-8 text-center rounded-xl">
+            <span className="material-symbols-outlined text-4xl text-tertiary mb-4">award_star</span>
+            <h4 className="font-headline-md text-on-background mb-2">Award-Winning Creative</h4>
+            <p className="font-body-md text-on-surface-variant">Our creative teams deliver standout campaigns recognized by industry leaders globally.</p>
+        </div>
+    </div>
+</section>
+
 </main>
 
     </div>

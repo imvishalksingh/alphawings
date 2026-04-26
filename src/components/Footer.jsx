@@ -15,10 +15,10 @@ export default function Footer() {
       <div className="max-w-[1440px] mx-auto px-8 lg:px-16">
         
         {/* Main Footer Content - Optimized for mobile grid */}
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-12 gap-y-16 gap-x-8 lg:gap-8 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-y-16 gap-x-8 lg:gap-8 mb-20">
           
           {/* Brand Column - Full width on mobile */}
-          <div className="col-span-2 lg:col-span-5">
+          <div className="col-span-1 md:col-span-2 lg:col-span-5">
             <Link to="/" className="inline-block mb-8 group">
               <img 
                 src="/assets/company-logo.png" 
@@ -68,7 +68,7 @@ export default function Footer() {
           </div>
 
           {/* Contact Column - Full width on mobile */}
-          <div className="col-span-2 lg:col-span-3 lg:pl-12">
+          <div className="col-span-1 md:col-span-2 lg:col-span-3 lg:pl-12">
             <h4 className="text-white text-[10px] font-black uppercase tracking-[0.25em] mb-8 text-primary" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>Contact HQ</h4>
             <address className="not-italic space-y-6">
               <div className="space-y-4">

@@ -44,7 +44,7 @@ export default function PoliticalCampaigns() {
 </div>
 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[280px]">
 
-<div className="md:col-span-2 md:row-span-2 rounded-2xl bg-surface-container-high border border-outline-variant/30 inner-glow p-10 relative overflow-hidden group hover:border-primary/50 transition-colors">
+<Link to="/services/political/campaign-strategy" className="md:col-span-2 md:row-span-2 rounded-2xl bg-surface-container-high border border-outline-variant/30 inner-glow p-10 relative overflow-hidden group hover:border-primary/50 transition-colors block cursor-pointer">
 <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/4"></div>
 <div className="relative z-10 h-full flex flex-col justify-between">
 <div>
@@ -61,9 +61,9 @@ export default function PoliticalCampaigns() {
 <span className="px-3 py-1 bg-surface-variant rounded text-xs font-label-sm text-tertiary uppercase tracking-wider">Opposition Research</span>
 </div>
 </div>
-</div>
+</Link>
 
-<div className="rounded-2xl bg-surface-container border border-outline-variant/30 inner-glow p-8 relative overflow-hidden hover:bg-surface-container-high transition-colors">
+<Link to="/services/political/digital-marketing" className="rounded-2xl bg-surface-container border border-outline-variant/30 inner-glow p-8 relative overflow-hidden hover:bg-surface-container-high transition-colors block cursor-pointer">
 <div className="w-10 h-10 rounded-lg bg-secondary-container/20 border border-secondary/20 flex items-center justify-center mb-6">
 <span className="material-symbols-outlined text-secondary text-xl" data-icon="campaign">campaign</span>
 </div>
@@ -71,9 +71,9 @@ export default function PoliticalCampaigns() {
 <p className="font-body-md text-body-md text-on-surface-variant text-sm">
                         Hyper-targeted ad deployment across all digital vectors, optimizing spend for maximum sentiment shift.
                     </p>
-</div>
+</Link>
 
-<div className="rounded-2xl bg-surface-container border border-outline-variant/30 inner-glow p-8 relative overflow-hidden hover:bg-surface-container-high transition-colors">
+<Link to="/services/political/voter-outreach" className="rounded-2xl bg-surface-container border border-outline-variant/30 inner-glow p-8 relative overflow-hidden hover:bg-surface-container-high transition-colors block cursor-pointer">
 <div className="w-10 h-10 rounded-lg bg-tertiary-container/20 border border-tertiary/20 flex items-center justify-center mb-6">
 <span className="material-symbols-outlined text-tertiary text-xl" data-icon="diversity_3">diversity_3</span>
 </div>
@@ -81,9 +81,9 @@ export default function PoliticalCampaigns() {
 <p className="font-body-md text-body-md text-on-surface-variant text-sm">
                         Ground-game orchestration combined with localized digital nudges to mobilize the base and persuade swing voters.
                     </p>
-</div>
+</Link>
 
-<div className="md:col-span-3 rounded-2xl bg-gradient-to-r from-surface-container-high to-surface border border-outline-variant/30 inner-glow p-8 flex items-center justify-between group hover:border-primary/30 transition-colors">
+<Link to="/services/political/social-media" className="md:col-span-3 rounded-2xl bg-gradient-to-r from-surface-container-high to-surface border border-outline-variant/30 inner-glow p-8 flex items-center justify-between group hover:border-primary/30 transition-colors block cursor-pointer">
 <div className="max-w-2xl">
 <div className="flex items-center gap-4 mb-4">
 <div className="w-10 h-10 rounded-lg bg-primary-container/20 border border-primary/20 flex items-center justify-center">
@@ -98,7 +98,7 @@ export default function PoliticalCampaigns() {
 <button className="hidden md:flex w-12 h-12 rounded-full border border-outline-variant items-center justify-center group-hover:bg-primary group-hover:text-on-primary group-hover:border-primary transition-all">
 <span className="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
 </button>
-</div>
+</Link>
 </div>
 </section>
 
@@ -163,6 +163,28 @@ export default function PoliticalCampaigns() {
 </div>
 </div>
 </section>
+
+<section className="max-w-container-max mx-auto px-margin-edge py-section-gap border-t border-outline-variant/20 relative">
+    <div className="mb-12 text-center">
+        <h2 className="font-headline-lg text-headline-lg text-on-surface mb-4">Past Performance Highlights</h2>
+        <p className="font-body-md text-on-surface-variant max-w-2xl mx-auto">Demonstrated capability in high-stakes electoral environments.</p>
+    </div>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="glass-panel p-8 text-center rounded-xl border border-primary/20 bg-surface-container">
+            <h3 className="text-5xl font-display-xl text-primary mb-2">94%</h3>
+            <p className="font-label-sm uppercase tracking-wider text-on-surface-variant">Win Rate in Targeted Districts</p>
+        </div>
+        <div className="glass-panel p-8 text-center rounded-xl border border-secondary/20 bg-surface-container">
+            <h3 className="text-5xl font-display-xl text-secondary mb-2">12M+</h3>
+            <p className="font-label-sm uppercase tracking-wider text-on-surface-variant">Voters Mobilized Digitally</p>
+        </div>
+        <div className="glass-panel p-8 text-center rounded-xl border border-tertiary/20 bg-surface-container">
+            <h3 className="text-5xl font-display-xl text-tertiary mb-2">3.5x</h3>
+            <p className="font-label-sm uppercase tracking-wider text-on-surface-variant">Avg. ROI on Ad Spend</p>
+        </div>
+    </div>
+</section>
+
 </main>
 
     </div>

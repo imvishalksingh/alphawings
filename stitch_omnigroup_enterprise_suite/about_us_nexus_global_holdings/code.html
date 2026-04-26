@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Nexus Global</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Space+Grotesk:wght@500;600;700;900&amp;family=Noto+Serif:ital@1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-background": "#dce4e3",
+                        "outline": "#8e909d",
+                        "on-tertiary-fixed": "#141c28",
+                        "on-primary-fixed": "#001551",
+                        "secondary-container": "#00763a",
+                        "tertiary-fixed": "#dbe3f4",
+                        "surface-tint": "#b7c4ff",
+                        "on-secondary-fixed": "#00210c",
+                        "surface-container-lowest": "#081010",
+                        "tertiary": "#bfc7d8",
+                        "surface-variant": "#2e3636",
+                        "secondary": "#79db93",
+                        "background": "#0d1515",
+                        "secondary-fixed-dim": "#79db93",
+                        "surface-container-high": "#232b2b",
+                        "surface-container": "#192121",
+                        "on-secondary": "#003919",
+                        "primary": "#b7c4ff",
+                        "primary-container": "#4862be",
+                        "on-secondary-fixed-variant": "#005227",
+                        "outline-variant": "#444652",
+                        "on-primary": "#002780",
+                        "inverse-on-surface": "#2a3232",
+                        "tertiary-container": "#606877",
+                        "surface": "#0d1515",
+                        "on-tertiary": "#29313e",
+                        "on-primary-fixed-variant": "#223f9a",
+                        "inverse-primary": "#3d58b3",
+                        "surface-bright": "#333b3b",
+                        "inverse-surface": "#dce4e3",
+                        "primary-fixed": "#dce1ff",
+                        "surface-container-low": "#151d1d",
+                        "secondary-fixed": "#95f8ad",
+                        "on-tertiary-container": "#e0e8f9",
+                        "tertiary-fixed-dim": "#bfc7d8",
+                        "on-surface": "#dce4e3",
+                        "on-tertiary-fixed-variant": "#3f4755",
+                        "error": "#ffb4ab",
+                        "on-primary-container": "#e4e7ff",
+                        "surface-dim": "#0d1515",
+                        "error-container": "#93000a",
+                        "on-secondary-container": "#97f9ae",
+                        "on-surface-variant": "#c5c5d4",
+                        "surface-container-highest": "#2e3636",
+                        "on-error": "#690005",
+                        "on-error-container": "#ffdad6",
+                        "primary-fixed-dim": "#b7c4ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-edge": "64px",
+                        "container-max": "1440px",
+                        "unit": "8px",
+                        "gutter": "32px",
+                        "section-gap": "128px"
+                    },
+                    "fontFamily": {
+                        "display-xl": ["Space Grotesk"],
+                        "label-sm": ["Inter"],
+                        "headline-lg": ["Space Grotesk"],
+                        "headline-md": ["Space Grotesk"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "editorial-italic": ["Noto Serif"]
+                    },
+                    "fontSize": {
+                        "display-xl": ["72px", { "lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "700" }],
+                        "label-sm": ["12px", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-lg": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "500" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "editorial-italic": ["20px", { "lineHeight": "1.6", "fontWeight": "400", "fontStyle": "italic" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .inner-glow { box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.1); }
+        .glass-panel { background: rgba(33, 41, 54, 0.4); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .radial-highlight { background: radial-gradient(circle at top left, rgba(183, 196, 255, 0.15), transparent 60%); }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 border-b border-white/10 bg-slate-950/60 backdrop-blur-lg shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
+<div class="max-w-[1440px] mx-auto flex justify-between items-center px-8 md:px-16 h-20">
+<div class="text-2xl font-black tracking-tighter text-slate-50 dark:text-white">NEXUS GLOBAL</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-['Space_Grotesk'] font-medium tracking-tight text-slate-400 dark:text-slate-500 hover:text-slate-50 dark:hover:text-white transition-colors hover:bg-white/5 rounded-lg transition-all duration-300 px-3 py-2" href="#">Solutions</a>
+<a class="font-['Space_Grotesk'] font-medium tracking-tight text-slate-400 dark:text-slate-500 hover:text-slate-50 dark:hover:text-white transition-colors hover:bg-white/5 rounded-lg transition-all duration-300 px-3 py-2" href="#">Divisions</a>
+<a class="font-['Space_Grotesk'] font-medium tracking-tight text-blue-500 dark:text-blue-400 border-b-2 border-blue-500 pb-1 px-3 py-2" href="#">About</a>
+<a class="font-['Space_Grotesk'] font-medium tracking-tight text-slate-400 dark:text-slate-500 hover:text-slate-50 dark:hover:text-white transition-colors hover:bg-white/5 rounded-lg transition-all duration-300 px-3 py-2" href="#">Insights</a>
+<a class="font-['Space_Grotesk'] font-medium tracking-tight text-slate-400 dark:text-slate-500 hover:text-slate-50 dark:hover:text-white transition-colors hover:bg-white/5 rounded-lg transition-all duration-300 px-3 py-2" href="#">Careers</a>
+</div>
+<div class="flex items-center space-x-4">
+<button class="scale-95 active:opacity-80 transition-transform">
+<span class="material-symbols-outlined text-on-background">search</span>
+</button>
+<button class="hidden md:block bg-gradient-to-r from-primary-container to-primary text-on-primary-container font-label-sm text-label-sm px-6 py-3 rounded-lg border border-primary/20 inner-glow hover:brightness-110 transition-all">Get in Touch</button>
+</div>
+</div>
+</nav>
+<main class="pt-[160px] pb-section-gap">
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-margin-edge mb-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-7">
+<h1 class="font-display-xl text-display-xl text-on-surface mb-6">Architecting the future of industry.</h1>
+<p class="font-editorial-italic text-editorial-italic text-on-surface-variant max-w-2xl mb-8">
+                        Nexus Global is a multi-national conglomerate bridging traditional industrial stability with cutting-edge technological agility. We build the infrastructure of tomorrow.
+                    </p>
+</div>
+<div class="md:col-span-5 relative h-[500px] rounded-xl overflow-hidden glass-panel">
+<div class="absolute inset-0 bg-surface-variant/30 radial-highlight mix-blend-overlay z-10"></div>
+<img alt="Corporate Headquarters" class="w-full h-full object-cover grayscale opacity-60" data-alt="Abstract low angle shot of modern glass skyscraper reflecting dramatic stormy sky with blue tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8Z_Gz50Jhl_yodgGiejF5VdteuloWAREJT4lcYiMQJ5FW97bfSYEjT3HBvruxb6Qn3XO4rWubaxRa6YTo7KEKT2GSJ4GVA28NUh15vjtBLdL_5aVYUx4Rolic9yUPADLESqOfApjnTe-jhWbRypYidAKRr6P6RTzjagzThBPTzvQ5qQKFQc8Iy75vFPsw1hVFMuBJZZxw-Pg4rRHD2drrIRpBEHvHJGdR06EVb1BBlk06I5_pii_-BeS7MQ6nhM_9ACuEIsgKbpY"/>
+</div>
+</div>
+</section>
+<!-- Vision & Mission (Bento Grid) -->
+<section class="max-w-container-max mx-auto px-margin-edge mb-section-gap">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-12">Vision &amp; Mission</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="glass-panel radial-highlight rounded-xl p-10 md:col-span-2 flex flex-col justify-between min-h-[300px]">
+<div>
+<span class="material-symbols-outlined text-primary text-4xl mb-6">visibility</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">The Vision</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                            To create a seamlessly integrated global ecosystem where technology amplifies human potential and industrial resilience drives sustainable progress for generations.
+                        </p>
+</div>
+</div>
+<div class="glass-panel rounded-xl p-10 flex flex-col justify-between min-h-[300px]">
+<div>
+<span class="material-symbols-outlined text-primary text-4xl mb-6">flag</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">The Mission</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Delivering uncompromising value across our strategic divisions by maintaining absolute reliability, fostering radical innovation, and leading with unyielding integrity.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- The Nexus Structure -->
+<section class="max-w-container-max mx-auto px-margin-edge mb-section-gap relative">
+<div class="absolute top-1/2 left-0 w-full h-[1px] bg-outline-variant/30 -z-10 hidden md:block"></div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-12 text-center">The Nexus Structure</h2>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<!-- Division Card 1 -->
+<div class="glass-panel rounded-xl p-8 relative overflow-hidden group hover:-translate-y-2 transition-transform duration-300">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="inline-flex items-center justify-center px-3 py-1 rounded-full bg-tertiary-container/30 text-tertiary font-label-sm text-label-sm uppercase tracking-widest mb-6 border border-outline-variant/50">
+                        Technology
+                    </div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">Nexus Tech</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Enterprise software, AI infrastructure, and scalable cloud solutions for institutional clients.</p>
+</div>
+<!-- Division Card 2 -->
+<div class="glass-panel rounded-xl p-8 relative overflow-hidden group hover:-translate-y-2 transition-transform duration-300 md:translate-y-12">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="inline-flex items-center justify-center px-3 py-1 rounded-full bg-tertiary-container/30 text-tertiary font-label-sm text-label-sm uppercase tracking-widest mb-6 border border-outline-variant/50">
+                        Energy
+                    </div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">Nexus Power</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Renewable transition frameworks and next-generation grid management systems.</p>
+</div>
+<!-- Division Card 3 -->
+<div class="glass-panel rounded-xl p-8 relative overflow-hidden group hover:-translate-y-2 transition-transform duration-300">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="inline-flex items-center justify-center px-3 py-1 rounded-full bg-tertiary-container/30 text-tertiary font-label-sm text-label-sm uppercase tracking-widest mb-6 border border-outline-variant/50">
+                        Logistics
+                    </div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">Nexus Flow</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Global supply chain optimization utilizing predictive analytics and autonomous routing.</p>
+</div>
+<!-- Division Card 4 -->
+<div class="glass-panel rounded-xl p-8 relative overflow-hidden group hover:-translate-y-2 transition-transform duration-300 md:translate-y-12">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="inline-flex items-center justify-center px-3 py-1 rounded-full bg-tertiary-container/30 text-tertiary font-label-sm text-label-sm uppercase tracking-widest mb-6 border border-outline-variant/50">
+                        Capital
+                    </div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">Nexus Capital</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Strategic investments, M&amp;A advisory, and long-term asset management for institutional partners.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-900 bg-slate-950 dark:bg-black mt-16">
+<div class="max-w-[1440px] mx-auto px-8 md:px-16 py-20 grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-2">
+<div class="text-xl font-bold text-white uppercase tracking-widest mb-4">NEXUS GLOBAL</div>
+<p class="font-['Space_Grotesk'] text-sm tracking-wide text-slate-500">© 2024 Nexus Global Holdings. Architecting the future of industry.</p>
+</div>
+<div class="col-span-1">
+<ul class="space-y-4">
+<li><a class="font-['Space_Grotesk'] text-sm tracking-wide text-slate-500 hover:text-blue-400 underline-offset-4 hover:underline transition-all duration-200 ease-in-out" href="#">Privacy Policy</a></li>
+<li><a class="font-['Space_Grotesk'] text-sm tracking-wide text-slate-500 hover:text-blue-400 underline-offset-4 hover:underline transition-all duration-200 ease-in-out" href="#">Terms of Service</a></li>
+<li><a class="font-['Space_Grotesk'] text-sm tracking-wide text-slate-500 hover:text-blue-400 underline-offset-4 hover:underline transition-all duration-200 ease-in-out" href="#">Investor Relations</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<ul class="space-y-4">
+<li><a class="font-['Space_Grotesk'] text-sm tracking-wide text-slate-500 hover:text-blue-400 underline-offset-4 hover:underline transition-all duration-200 ease-in-out" href="#">ESG Report</a></li>
+<li><a class="font-['Space_Grotesk'] text-sm tracking-wide text-slate-500 hover:text-blue-400 underline-offset-4 hover:underline transition-all duration-200 ease-in-out" href="#">Global Offices</a></li>
+</ul>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Senior Cloud Architect - NexusGlobal Careers</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Space+Grotesk:wght@500;600;700&amp;family=Noto+Serif:ital@1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed": "#dbe3f4",
+                        "tertiary-container": "#606877",
+                        "primary-fixed": "#dce1ff",
+                        "primary-container": "#4862be",
+                        "on-primary-container": "#e4e7ff",
+                        "on-secondary-container": "#97f9ae",
+                        "inverse-on-surface": "#2a3232",
+                        "surface-container-lowest": "#081010",
+                        "outline-variant": "#444652",
+                        "on-tertiary-fixed-variant": "#3f4755",
+                        "secondary-container": "#00763a",
+                        "inverse-surface": "#dce4e3",
+                        "surface-bright": "#333b3b",
+                        "on-tertiary-container": "#e0e8f9",
+                        "on-primary-fixed": "#001551",
+                        "secondary": "#79db93",
+                        "on-surface": "#dce4e3",
+                        "error": "#ffb4ab",
+                        "on-tertiary": "#29313e",
+                        "tertiary-fixed-dim": "#bfc7d8",
+                        "outline": "#8e909d",
+                        "on-secondary-fixed-variant": "#005227",
+                        "surface-container-highest": "#2e3636",
+                        "surface-container": "#192121",
+                        "surface-tint": "#b7c4ff",
+                        "surface-container-high": "#232b2b",
+                        "on-secondary": "#003919",
+                        "surface-container-low": "#151d1d",
+                        "secondary-fixed": "#95f8ad",
+                        "primary-fixed-dim": "#b7c4ff",
+                        "surface-dim": "#0d1515",
+                        "on-primary": "#002780",
+                        "background": "#0d1515",
+                        "secondary-fixed-dim": "#79db93",
+                        "on-secondary-fixed": "#00210c",
+                        "tertiary": "#bfc7d8",
+                        "error-container": "#93000a",
+                        "on-error": "#690005",
+                        "on-primary-fixed-variant": "#223f9a",
+                        "on-tertiary-fixed": "#141c28",
+                        "on-surface-variant": "#c5c5d4",
+                        "inverse-primary": "#3d58b3",
+                        "on-error-container": "#ffdad6",
+                        "surface-variant": "#2e3636",
+                        "surface": "#0d1515",
+                        "primary": "#b7c4ff",
+                        "on-background": "#dce4e3"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "margin-edge": "64px",
+                        "gutter": "32px",
+                        "section-gap": "128px",
+                        "container-max": "1440px"
+                    },
+                    "fontFamily": {
+                        "label-sm": ["Inter"],
+                        "headline-md": ["Space Grotesk"],
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-lg": ["Space Grotesk"],
+                        "display-xl": ["Space Grotesk"],
+                        "editorial-italic": ["Noto Serif"]
+                    },
+                    "fontSize": {
+                        "label-sm": ["12px", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "headline-lg": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                        "display-xl": ["72px", { "lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "700" }],
+                        "editorial-italic": ["20px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(33, 41, 54, 0.4);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #b7c4ff, #dce1ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .btn-primary {
+            background: linear-gradient(to right, #4862be, #3d58b3);
+            border: 1px solid rgba(183, 196, 255, 0.3);
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            box-shadow: 0 0 15px rgba(183, 196, 255, 0.2);
+            border-color: rgba(183, 196, 255, 0.6);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-xl border-b border-white/10 shadow-2xl shadow-blue-900/20 font-space-grotesk">
+<div class="max-w-7xl mx-auto px-8 h-20 flex items-center justify-between">
+<div class="flex items-center gap-8">
+<a class="text-xl font-bold tracking-tight text-white" href="#">NexusGlobal</a>
+<div class="hidden md:flex items-center gap-6">
+<a class="text-slate-300 hover:text-white transition-colors hover:bg-white/5 transition-all duration-300 px-3 py-2 rounded-md" href="#">Divisions</a>
+<a class="text-blue-400 border-b-2 border-blue-500 pb-1 px-3 py-2" href="#">Careers</a>
+<a class="text-slate-300 hover:text-white transition-colors hover:bg-white/5 transition-all duration-300 px-3 py-2 rounded-md" href="#">Investors</a>
+<a class="text-slate-300 hover:text-white transition-colors hover:bg-white/5 transition-all duration-300 px-3 py-2 rounded-md" href="#">Sustainability</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-blue-500 dark:text-blue-400 font-semibold scale-95 active:scale-90 transition-transform">Contact Us</button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative pt-40 pb-24 px-8 border-b border-white/5" data-alt="abstract dark high-tech server room with glowing blue neon lights and geometric glass structures reflecting deep shadows" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDaosBKmGLK_yq1uHN8K7GCA1ZUuC44hQqCv7Sd4GioYtjD9IpeRtbe6Og-5gdtlM4MbRUB-0eDX7WhxwO2a9a_sONNQ2MJJgTk44jMarISzyi48t6_2r4TnkRcWFbS-ViqSKZP156ahb9sqCcFQ7cgw0ykiPCsspCRTW7ksCX-JCq05n06flCEf2GhanyBuvx0Nefq3kHHnbqKkuWkzIEc98apWyDN-wIWrV521rC6j__02gQv3h-Ldf7u9S_mJ1cbyitLL51uPcU'); background-size: cover; background-position: center;">
+<div class="absolute inset-0 bg-background/80 backdrop-blur-sm"></div>
+<div class="relative max-w-container-max mx-auto glass-panel rounded-xl p-12 lg:p-16 flex flex-col md:flex-row items-start justify-between gap-8 shadow-[0_20px_50px_rgba(0,39,128,0.1)]">
+<div class="max-w-3xl">
+<div class="flex gap-4 mb-6">
+<span class="bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm px-3 py-1 rounded-full uppercase tracking-wider">Nexus IT Architecture</span>
+<span class="bg-surface-variant text-on-surface-variant font-label-sm text-label-sm px-3 py-1 rounded-full flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">location_on</span> San Francisco / Hybrid</span>
+</div>
+<h1 class="font-display-xl text-display-xl mb-4 text-gradient">Senior Cloud Architect</h1>
+<p class="font-editorial-italic text-editorial-italic text-primary-fixed-dim">Shape the digital backbone of a global conglomerate.</p>
+</div>
+<div class="flex flex-col gap-4 min-w-[200px]">
+<button class="btn-primary text-on-primary-container font-label-sm text-label-sm py-4 px-8 rounded-lg uppercase tracking-wider w-full flex items-center justify-center gap-2">
+                    Apply Now <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<div class="text-center font-label-sm text-label-sm text-on-surface-variant">Posted 2 days ago</div>
+</div>
+</div>
+</section>
+<!-- Main Content -->
+<main class="max-w-container-max mx-auto px-8 py-section-gap grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Job Details -->
+<div class="lg:col-span-8 flex flex-col gap-16">
+<section>
+<h2 class="font-headline-md text-headline-md mb-6 text-on-surface">About the Role</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-4">
+                    NexusGlobal is seeking a visionary Senior Cloud Architect to lead the design and implementation of our next-generation enterprise cloud infrastructure. Operating at the intersection of our industrial, tech, and financial divisions, you will build scalable, secure, and highly resilient architectures that support our global operations.
+                </p>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                    This is not just a technical role; it's a strategic leadership position. You will work closely with executive stakeholders to translate business objectives into robust technological solutions, driving our cloud-first initiative across all subsidiaries.
+                </p>
+</section>
+<section>
+<h2 class="font-headline-md text-headline-md mb-6 text-on-surface">Key Responsibilities</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="glass-panel p-6 rounded-lg border-l-4 border-l-primary">
+<h3 class="font-label-sm text-label-sm text-primary mb-2 uppercase tracking-wider">Architecture Design</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Design and deploy highly available, scalable, and secure multi-cloud architectures (AWS, Azure, GCP) tailored to complex enterprise needs.</p>
+</div>
+<div class="glass-panel p-6 rounded-lg border-l-4 border-l-secondary">
+<h3 class="font-label-sm text-label-sm text-secondary mb-2 uppercase tracking-wider">Strategic Leadership</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Define cloud strategy, governance frameworks, and best practices across all NexusGlobal technology divisions.</p>
+</div>
+<div class="glass-panel p-6 rounded-lg border-l-4 border-l-tertiary">
+<h3 class="font-label-sm text-label-sm text-tertiary mb-2 uppercase tracking-wider">Modernization</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Lead the migration of legacy industrial systems to modern cloud-native solutions using containerization and microservices.</p>
+</div>
+<div class="glass-panel p-6 rounded-lg border-l-4 border-l-primary-fixed-dim">
+<h3 class="font-label-sm text-label-sm text-primary-fixed-dim mb-2 uppercase tracking-wider">Security &amp; Compliance</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Ensure all cloud deployments meet stringent global financial and data privacy regulations (GDPR, SOC2, HIPAA).</p>
+</div>
+</div>
+</section>
+</div>
+<!-- Sticky Sidebar Form -->
+<div class="lg:col-span-4 relative">
+<div class="sticky top-32 glass-panel p-8 rounded-xl">
+<h3 class="font-headline-md text-headline-md mb-2 text-on-surface">Quick Apply</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Start your journey with NexusGlobal.</p>
+<form class="flex flex-col gap-6">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-2" for="fullName">Full Name</label>
+<input class="w-full bg-surface-container border-b border-outline-variant focus:border-primary text-on-surface p-3 rounded-t-sm focus:ring-0 transition-colors font-body-md text-body-md placeholder-outline" id="fullName" placeholder="Jane Doe" type="text"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-2" for="email">Email Address</label>
+<input class="w-full bg-surface-container border-b border-outline-variant focus:border-primary text-on-surface p-3 rounded-t-sm focus:ring-0 transition-colors font-body-md text-body-md placeholder-outline" id="email" placeholder="jane@example.com" type="email"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface-variant mb-2">Resume</label>
+<div class="border border-dashed border-outline-variant rounded-lg p-6 text-center hover:bg-surface-container-high transition-colors cursor-pointer group">
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors mb-2 text-[32px]">upload_file</span>
+<p class="font-body-md text-body-md text-on-surface-variant group-hover:text-on-surface">Drag &amp; drop or <span class="text-primary">browse</span></p>
+<p class="font-label-sm text-label-sm text-outline mt-1">PDF, DOCX up to 5MB</p>
+</div>
+</div>
+<button class="btn-primary text-on-primary-container font-label-sm text-label-sm py-4 rounded-lg uppercase tracking-wider w-full mt-4" type="submit">
+                        Submit Application
+                    </button>
+</form>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-950 w-full py-16 border-t border-white/5 font-space-grotesk text-sm">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-12">
+<div>
+<div class="text-lg font-bold text-slate-100 mb-4">NexusGlobal</div>
+<div class="text-slate-500">© 2024 NexusGlobal Conglomerate. All rights reserved.</div>
+</div>
+<div class="flex flex-wrap gap-6 justify-start md:justify-end">
+<a class="text-slate-500 hover:text-blue-400 transition-colors opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="text-slate-500 hover:text-blue-400 transition-colors opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+<a class="text-slate-500 hover:text-blue-400 transition-colors opacity-80 hover:opacity-100" href="#">Cookie Settings</a>
+<a class="text-slate-500 hover:text-blue-400 transition-colors opacity-80 hover:opacity-100" href="#">Global Offices</a>
+<a class="text-slate-500 hover:text-blue-400 transition-colors opacity-80 hover:opacity-100" href="#">Accessibility</a>
+</div>
+</div>
+</footer>
+</body></html>

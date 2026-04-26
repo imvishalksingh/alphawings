@@ -30,7 +30,7 @@ export default function ManagementConsulting() {
 </div>
 <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter">
 
-<div className="md:col-span-8 glass-panel rounded-xl p-10 radial-glow flex flex-col justify-between group transition-all duration-500 hover:border-primary/30 min-h-[400px] relative overflow-hidden">
+<Link to="/services/consulting/business-strategy" className="md:col-span-8 glass-panel rounded-xl p-10 radial-glow flex flex-col justify-between group transition-all duration-500 hover:border-primary/30 min-h-[400px] relative overflow-hidden block cursor-pointer">
 <div className="absolute right-0 top-0 opacity-10 transition-transform duration-700 group-hover:scale-110 group-hover:opacity-20 pointer-events-none">
 <span className="material-symbols-outlined text-[200px]" data-icon="strategy" data-weight="fill" style={{"fontVariationSettings":"'FILL' 1"}}>strategy</span>
 </div>
@@ -46,9 +46,9 @@ export default function ManagementConsulting() {
 <div className="mt-8 flex items-center text-primary font-label-sm text-label-sm uppercase tracking-wide cursor-pointer group-hover:text-primary-fixed transition-colors">
                         Explore Capability <span className="material-symbols-outlined ml-2 text-sm transition-transform group-hover:translate-x-2" data-icon="arrow_forward">arrow_forward</span>
 </div>
-</div>
+</Link>
 
-<div className="md:col-span-4 glass-panel rounded-xl p-8 radial-glow flex flex-col justify-between group transition-all duration-500 hover:border-primary/30">
+<Link to="/services/consulting/operations-optimization" className="md:col-span-4 glass-panel rounded-xl p-8 radial-glow flex flex-col justify-between group transition-all duration-500 hover:border-primary/30 block cursor-pointer">
 <div>
 <div className="w-10 h-10 rounded bg-surface-variant flex items-center justify-center mb-6 border border-white/5">
 <span className="material-symbols-outlined text-secondary" data-icon="settings_suggest">settings_suggest</span>
@@ -58,9 +58,9 @@ export default function ManagementConsulting() {
                             Streamlining global supply chains and internal processes to maximize efficiency, reduce waste, and improve bottom-line performance.
                         </p>
 </div>
-</div>
+</Link>
 
-<div className="md:col-span-5 glass-panel rounded-xl p-8 radial-glow flex flex-col justify-between group transition-all duration-500 hover:border-primary/30">
+<Link to="/services/consulting/hr-consulting" className="md:col-span-5 glass-panel rounded-xl p-8 radial-glow flex flex-col justify-between group transition-all duration-500 hover:border-primary/30 block cursor-pointer">
 <div>
 <div className="w-10 h-10 rounded bg-surface-variant flex items-center justify-center mb-6 border border-white/5">
 <span className="material-symbols-outlined text-tertiary-fixed" data-icon="groups">groups</span>
@@ -70,9 +70,9 @@ export default function ManagementConsulting() {
                             Designing agile organizational structures. We help align your human capital with strategic objectives to foster innovation and leadership retention.
                         </p>
 </div>
-</div>
+</Link>
 
-<div className="md:col-span-7 glass-panel rounded-xl p-8 radial-glow flex flex-col justify-between group transition-all duration-500 hover:border-primary/30 relative overflow-hidden">
+<Link to="/services/consulting/growth-planning" className="md:col-span-7 glass-panel rounded-xl p-8 radial-glow flex flex-col justify-between group transition-all duration-500 hover:border-primary/30 relative overflow-hidden block cursor-pointer">
 <div className="absolute right-0 bottom-0 opacity-10 transition-transform duration-700 group-hover:scale-110 group-hover:opacity-20 pointer-events-none">
 <span className="material-symbols-outlined text-[150px]" data-icon="trending_up" data-weight="fill" style={{"fontVariationSettings":"'FILL' 1"}}>trending_up</span>
 </div>
@@ -85,7 +85,7 @@ export default function ManagementConsulting() {
                             Identifying adjacencies and expanding market footprints. Comprehensive M&amp;A advisory, market entry strategies, and portfolio optimization for scaled enterprise.
                         </p>
 </div>
-</div>
+</Link>
 </div>
 </section>
 
@@ -147,6 +147,32 @@ export default function ManagementConsulting() {
 </div>
 </div>
 </section>
+
+<section className="max-w-[1440px] mx-auto px-8 md:px-margin-edge py-section-gap border-t border-surface-variant">
+    <div className="mb-12 text-center">
+        <h2 className="font-headline-lg text-headline-lg text-on-background mb-4">Client Success Metrics</h2>
+        <p className="font-body-md text-on-surface-variant max-w-2xl mx-auto">Tangible results delivered through our management consulting engagements globally.</p>
+    </div>
+    <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="glass-panel p-8 text-center rounded-xl border border-primary/20">
+            <h3 className="text-4xl font-display-xl text-primary mb-2">35%</h3>
+            <p className="font-label-sm uppercase tracking-wider text-on-surface-variant">Avg. Revenue Growth</p>
+        </div>
+        <div className="glass-panel p-8 text-center rounded-xl border border-secondary/20">
+            <h3 className="text-4xl font-display-xl text-secondary mb-2">$2B+</h3>
+            <p className="font-label-sm uppercase tracking-wider text-on-surface-variant">Cost Savings Identified</p>
+        </div>
+        <div className="glass-panel p-8 text-center rounded-xl border border-tertiary/20">
+            <h3 className="text-4xl font-display-xl text-tertiary mb-2">40+</h3>
+            <p className="font-label-sm uppercase tracking-wider text-on-surface-variant">Fortune 500 Clients</p>
+        </div>
+        <div className="glass-panel p-8 text-center rounded-xl border border-error/20">
+            <h3 className="text-4xl font-display-xl text-error mb-2">150+</h3>
+            <p className="font-label-sm uppercase tracking-wider text-on-surface-variant">Global Restructurings</p>
+        </div>
+    </div>
+</section>
+
 </main>
 
     </div>

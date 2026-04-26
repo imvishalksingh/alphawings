@@ -181,11 +181,11 @@ export default function HeroSlider() {
       </div>
 
       {/* SLIDER CONTROLS (LINEAR STYLE) */}
-      <div className="absolute bottom-12 left-8 lg:left-16 z-20 flex items-center gap-8">
+      <div className="absolute bottom-12 left-8 lg:left-16 z-20 flex items-center gap-4 sm:gap-8">
         
         <button 
           onClick={prevSlide}
-          className="w-14 h-14 rounded-full border border-white/10 flex items-center justify-center text-white hover:bg-white/5 hover:border-white/30 transition-all active:scale-90"
+          className="w-10 h-10 sm:w-14 sm:h-14 rounded-full border border-white/10 flex items-center justify-center text-white hover:bg-white/5 hover:border-white/30 transition-all active:scale-90"
         >
           <span className="material-symbols-outlined text-3xl">chevron_left</span>
         </button>
@@ -199,7 +199,7 @@ export default function HeroSlider() {
               className="group relative py-4"
             >
               <div className={`h-1.5 transition-all duration-700 rounded-full ${
-                i === current ? 'w-16 bg-primary shadow-[0_0_15px_rgba(183,196,255,0.6)]' : 'w-6 bg-white/10 group-hover:bg-white/30'
+                i === current ? 'w-10 sm:w-16 bg-primary shadow-[0_0_15px_rgba(183,196,255,0.6)]' : 'w-4 sm:w-6 bg-white/10 group-hover:bg-white/30'
               }`} />
             </button>
           ))}
@@ -207,7 +207,7 @@ export default function HeroSlider() {
 
         <button 
           onClick={nextSlide}
-          className="w-14 h-14 rounded-full border border-white/10 flex items-center justify-center text-white hover:bg-white/5 hover:border-white/30 transition-all active:scale-90"
+          className="w-10 h-10 sm:w-14 sm:h-14 rounded-full border border-white/10 flex items-center justify-center text-white hover:bg-white/5 hover:border-white/30 transition-all active:scale-90"
         >
           <span className="material-symbols-outlined text-3xl">chevron_right</span>
         </button>

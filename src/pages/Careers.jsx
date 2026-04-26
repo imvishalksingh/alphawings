@@ -70,7 +70,7 @@ export default function Careers() {
 <p className="font-body-lg text-body-lg text-on-surface-variant">Discover your next role within our divisions.</p>
 </div>
 
-<div className="flex gap-4 w-full md:w-auto">
+<div className="flex flex-col md:flex-row gap-4 w-full md:w-auto">
 <div className="relative flex-grow md:flex-grow-0">
 <span className="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">search</span>
 <input className="w-full md:w-64 bg-surface border-b border-surface-bright focus:border-primary focus:ring-0 pl-10 pr-4 py-2 font-body-md text-on-surface transition-colors" placeholder="Search roles..." type="text"/>
@@ -96,7 +96,7 @@ export default function Careers() {
 <h3 className="font-headline-md text-[24px] text-on-surface mb-2">Senior Cloud Architect</h3>
 <p className="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-2">Lead the deployment of scalable enterprise infrastructure across global subsidiary networks.</p>
 <div className="mt-auto">
-<div className="flex gap-4 mb-6">
+<div className="flex flex-wrap gap-4 mb-6">
 <div className="flex items-center gap-1 text-outline font-label-sm text-label-sm">
 <span className="material-symbols-outlined text-[16px]">location_on</span>
                                     San Francisco / Hybrid
@@ -125,7 +125,7 @@ export default function Careers() {
 <h3 className="font-headline-md text-[24px] text-on-surface mb-2">Strategic Investment Lead</h3>
 <p className="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-2">Identify and execute high-yield M&amp;A opportunities in the emerging tech sector.</p>
 <div className="mt-auto">
-<div className="flex gap-4 mb-6">
+<div className="flex flex-wrap gap-4 mb-6">
 <div className="flex items-center gap-1 text-outline font-label-sm text-label-sm">
 <span className="material-symbols-outlined text-[16px]">location_on</span>
                                     New York / On-site
@@ -154,7 +154,7 @@ export default function Careers() {
 <h3 className="font-headline-md text-[24px] text-on-surface mb-2">Public Policy Consultant</h3>
 <p className="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-2">Navigate international regulatory frameworks to ensure compliant expansion strategies.</p>
 <div className="mt-auto">
-<div className="flex gap-4 mb-6">
+<div className="flex flex-wrap gap-4 mb-6">
 <div className="flex items-center gap-1 text-outline font-label-sm text-label-sm">
 <span className="material-symbols-outlined text-[16px]">location_on</span>
                                     London / Hybrid

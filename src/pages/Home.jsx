@@ -118,7 +118,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-gutter">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-gutter">
             <div className="glass-card p-10 rounded-3xl text-center">
               <div className="text-display-xl font-bold text-gradient mb-2">$4.2T</div>
               <p className="font-label-sm text-on-surface-variant tracking-widest uppercase">Assets Under Supervision</p>
@@ -147,23 +147,23 @@ export default function Home() {
         </div>
         <div className="relative max-w-[1440px] mx-auto h-[600px] rounded-3xl overflow-hidden border border-white/10 mx-8 lg:mx-16">
           <img
-            alt="Minimalist world map with glowing pinpoints in New York, London, and Singapore"
-            className="w-full h-full object-cover grayscale opacity-40"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBS_pkSne8itzJmpTSe-OPgfVvNBttZe8uf5tCsZWPE-Oo0lfmtSHOrInAGMqxdLJJDZa4dTsMf2lEP4uizzSuGQebu5x9d7MaUaJA54ZGb07aJ7W4s1EVnDOgTZJKkU0rLiTu03HdA31SYs1Ln0M3bHHb7R6fMG0gOpLUEkw_F7SWx3k-km-iAG5abnnZSLmvqDARFDVrbyUwns8uaRF6vKAvcXS1P0IQqM0KaGcQnHXLNIZmCFZd0bCYzvNsdvd0nsWXTvmoZbls"
+            alt="Minimalist world map with glowing pinpoints"
+            className="w-full h-full object-cover opacity-80"
+            src="/assets/minimal_dark_world_map.png"
           />
           <div className="absolute inset-0 flex items-center justify-center">
-            <div className="grid md:grid-cols-3 gap-8 w-full max-w-4xl px-8">
+            <div className="grid md:grid-cols-3 gap-8 w-full max-w-6xl px-8">
               <div className="glass-card p-6 rounded-xl border-l-4 border-l-primary">
-                <h5 className="font-headline-md text-xl mb-1">New York</h5>
-                <p className="text-xs font-label-sm text-on-surface-variant uppercase tracking-tighter">Finance &amp; Policy HQ</p>
+                <h5 className="font-headline-md text-xl mb-1">Dubai, UAE</h5>
+                <p className="text-xs font-label-sm text-on-surface-variant uppercase tracking-tighter">Quarter Deck QE2 Ship, Port Rashid</p>
               </div>
               <div className="glass-card p-6 rounded-xl border-l-4 border-l-primary translate-y-8">
-                <h5 className="font-headline-md text-xl mb-1">London</h5>
-                <p className="text-xs font-label-sm text-on-surface-variant uppercase tracking-tighter">Global Trade &amp; Legal</p>
+                <h5 className="font-headline-md text-xl mb-1">Gurugram, Haryana</h5>
+                <p className="text-xs font-label-sm text-on-surface-variant uppercase tracking-tighter">Corporate Office</p>
               </div>
               <div className="glass-card p-6 rounded-xl border-l-4 border-l-primary">
-                <h5 className="font-headline-md text-xl mb-1">Singapore</h5>
-                <p className="text-xs font-label-sm text-on-surface-variant uppercase tracking-tighter">IT &amp; Tech Innovation</p>
+                <h5 className="font-headline-md text-xl mb-1">Meerut, UP</h5>
+                <p className="text-xs font-label-sm text-on-surface-variant uppercase tracking-tighter">Branch Office</p>
               </div>
             </div>
           </div>
@@ -198,7 +198,7 @@ export default function Home() {
 
       {/* Logo Ticker */}
       <div className="py-12 border-y border-white/5 opacity-50 overflow-hidden">
-        <div className="max-w-[1440px] mx-auto px-8 flex justify-between items-center gap-12 grayscale">
+        <div className="max-w-[1440px] mx-auto px-8 flex flex-wrap justify-center items-center gap-8 md:gap-12 grayscale">
           <span className="font-black text-2xl opacity-40">AURORA</span>
           <span className="font-black text-2xl opacity-40">VERTEX</span>
           <span className="font-black text-2xl opacity-40">QUANTUM</span>

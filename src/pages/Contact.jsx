@@ -123,7 +123,7 @@ export default function Contact() {
                   Uttar Pradesh 250001,<br/>
                   India
                 </p>
-                <div className="flex gap-8">
+                <div className="flex flex-col sm:flex-row gap-8">
                   <div>
                     <span className="block font-label-sm text-primary text-[10px] uppercase tracking-widest mb-1">Inquiry Time</span>
                     <span className="text-white font-bold">10:00 AM — 07:00 PM IST</span>
