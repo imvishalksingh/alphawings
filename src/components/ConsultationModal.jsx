@@ -6,6 +6,8 @@ export default function ConsultationModal({ isOpen, onClose }) {
     email: '',
     mobile: '',
     company_name: '',
+    division: '',
+    message: '',
     'custom_fields_data[company-size_1]': '',
     'custom_fields_data[estimated-budget_3]': ''
   });
@@ -110,10 +112,12 @@ export default function ConsultationModal({ isOpen, onClose }) {
             <input type="hidden" name="estimated-budget" value={formData['custom_fields_data[estimated-budget_3]']} />
             
             {/* Alternative patterns for custom fields */}
-            <input type="hidden" name="custom_fields_data[1]" value={formData['custom_fields_data[company-size_1]']} />
-            <input type="hidden" name="custom_fields_data[3]" value={formData['custom_fields_data[estimated-budget_3]']} />
             <input type="hidden" name="custom_fields_data[lead_1]" value={formData['custom_fields_data[company-size_1]']} />
             <input type="hidden" name="custom_fields_data[lead_3]" value={formData['custom_fields_data[estimated-budget_3]']} />
+            
+            {/* Mirror fields for CRM compatibility */}
+            <input type="hidden" name="inquiry-target" value={formData.division} />
+            <input type="hidden" name="custom_fields_data[inquiry-target_4]" value={formData.division} />
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="space-y-2">
@@ -200,6 +204,34 @@ export default function ConsultationModal({ isOpen, onClose }) {
                 <option value="3">$100k - $500k</option>
                 <option value="4">$500k +</option>
               </select>
+            </div>
+
+            <div className="space-y-2 md:col-span-2">
+              <label className="text-sm font-medium text-gray-300">Inquiry Target</label>
+              <select
+                name="division"
+                value={formData.division}
+                onChange={handleChange}
+                className="w-full bg-[#1A1F2E] border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500/50 transition-all"
+              >
+                <option value="">Select Division</option>
+                <option value="Technology & AI">Technology & AI</option>
+                <option value="Infrastructure">Infrastructure</option>
+                <option value="Branding & Marketing">Branding & Marketing</option>
+                <option value="Finance">Finance</option>
+              </select>
+            </div>
+
+            <div className="space-y-2 md:col-span-2">
+              <label className="text-sm font-medium text-gray-300">Message / Project Goals</label>
+              <textarea
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                rows="3"
+                className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500/50 transition-all resize-none"
+                placeholder="Tell us about your requirements..."
+              ></textarea>
             </div>
           </div>
 
