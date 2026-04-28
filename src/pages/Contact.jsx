@@ -11,12 +11,12 @@ export default function Contact() {
     message: ''
   });
 
-  const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [showSuccess, setShowSuccess] = useState(false);
   const [error, setError] = useState('');
 
   useEffect(() => {
-    if (!isSubmitted && window.grecaptcha) {
+    if (!showSuccess && window.grecaptcha) {
       const renderCaptcha = () => {
         try {
           const container = document.getElementById('recaptcha-contact');
@@ -33,7 +33,7 @@ export default function Contact() {
       };
       setTimeout(renderCaptcha, 500);
     }
-  }, [isSubmitted]);
+  }, [showSuccess]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -59,8 +59,19 @@ export default function Contact() {
     // We wait 2 seconds to give it time before showing success
     setTimeout(() => {
       setIsSubmitting(false);
-      setIsSubmitted(true);
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      setShowSuccess(true);
+      setFormData({
+        name: '',
+        email: '',
+        mobile: '',
+        company_name: '',
+        division: '',
+        message: ''
+      });
+      if (window.grecaptcha) window.grecaptcha.reset();
+      
+      // Hide success message after 5 seconds
+      setTimeout(() => setShowSuccess(false), 5000);
     }, 2000);
   };
 
@@ -89,32 +100,7 @@ export default function Contact() {
             <p className="font-editorial-italic text-editorial-italic text-on-surface-variant text-lg md:text-xl">Deploying digital and industrial excellence from our Meerut headquarters to the world.</p>
           </div>
 
-          {isSubmitted ? (
-            <div className="max-w-2xl mx-auto py-20 text-center animate-in fade-in zoom-in duration-700">
-              <div className="w-24 h-24 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-8 border border-primary/30">
-                <span className="material-symbols-outlined text-primary text-5xl">verified</span>
-              </div>
-              <h2 className="font-display-xl text-4xl md:text-5xl text-white mb-6">Transmission Received.</h2>
-              <p className="font-body-lg text-lg text-on-surface-variant mb-12">Your inquiry has been successfully routed to the appropriate division lead. Our global response team will engage within 24 business hours.</p>
-              <button 
-                onClick={() => {
-                  setIsSubmitted(false);
-                  setFormData({
-                    name: '',
-                    email: '',
-                    mobile: '',
-                    company_name: '',
-                    division: '',
-                    message: ''
-                  });
-                }}
-                className="bg-primary text-on-primary px-12 py-5 rounded-xl font-black uppercase tracking-widest text-xs hover:shadow-[0_0_40px_rgba(183,196,255,0.4)] transition-all active:scale-95"
-              >
-                Send Another Inquiry
-              </button>
-            </div>
-          ) : (
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-gutter">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-gutter">
 
               {/* Inquiry Form */}
               <div className="lg:col-span-7 relative group">
@@ -244,6 +230,13 @@ export default function Contact() {
                         {isSubmitting ? 'Transmitting...' : 'Transmit Request'} 
                         {!isSubmitting && <span className="material-symbols-outlined text-sm">send</span>}
                       </button>
+
+                      {showSuccess && (
+                        <div className="mt-6 p-4 bg-green-500/20 border border-green-500/30 rounded-xl flex items-center gap-3 animate-in fade-in slide-in-from-bottom-4 duration-500">
+                          <span className="material-symbols-outlined text-green-500">check_circle</span>
+                          <p className="text-green-500 font-bold text-sm uppercase tracking-widest">Inquiry sent successfully</p>
+                        </div>
+                      )}
                     </form>
                   </div>
                 </div>
@@ -292,7 +285,6 @@ export default function Contact() {
                 </div>
               </div>
             </div>
-          )}
 
           <div className="mt-16 md:mt-section-gap">
             <h3 className="font-headline-lg text-headline-lg text-on-background mb-8 md:mb-12">Our Global Footprint</h3>

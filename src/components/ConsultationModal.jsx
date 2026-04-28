@@ -10,12 +10,12 @@ export default function ConsultationModal({ isOpen, onClose }) {
     'custom_fields_data[estimated-budget_3]': ''
   });
 
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [showSuccess, setShowSuccess] = useState(false);
   const [error, setError] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   React.useEffect(() => {
-    if (isOpen && !isSubmitted && window.grecaptcha) {
+    if (isOpen && !showSuccess && window.grecaptcha) {
       const renderCaptcha = () => {
         try {
           const container = document.getElementById('recaptcha-container');
@@ -33,7 +33,7 @@ export default function ConsultationModal({ isOpen, onClose }) {
       
       setTimeout(renderCaptcha, 500);
     }
-  }, [isOpen, isSubmitted]);
+  }, [isOpen, showSuccess]);
 
   if (!isOpen) return null;
 
@@ -53,7 +53,13 @@ export default function ConsultationModal({ isOpen, onClose }) {
     // We wait 2 seconds to give it time before showing success
     setTimeout(() => {
       setIsSubmitting(false);
-      setIsSubmitted(true);
+      setShowSuccess(true);
+      
+      // Close modal after 3 seconds of showing success
+      setTimeout(() => {
+        setShowSuccess(false);
+        onClose();
+      }, 3000);
     }, 2000);
   };
 
@@ -88,28 +94,13 @@ export default function ConsultationModal({ isOpen, onClose }) {
           </button>
         </div>
 
-        {isSubmitted ? (
-          <div className="p-12 text-center animate-in fade-in zoom-in duration-500">
-            <div className="w-20 h-20 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
-              <span className="material-symbols-outlined text-green-500 text-4xl">check_circle</span>
-            </div>
-            <h3 className="text-3xl font-bold text-white mb-3">Request Sent!</h3>
-            <p className="text-gray-400 text-lg mb-8">Your details have been successfully transmitted to our consulting team. We will reach out within 24 hours.</p>
-            <button 
-              onClick={onClose}
-              className="px-8 py-3 bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl text-white transition-all"
-            >
-              Close Window
-            </button>
-          </div>
-        ) : (
-          <form 
-            action="https://crm.alphabusi.com/lead-form/leadStore" 
-            method="POST"
-            target="crm_submission_frame"
-            onSubmit={handleSubmit}
-            className="p-8 space-y-6 max-h-[70vh] overflow-y-auto custom-scrollbar"
-          >
+        <form 
+          action="https://crm.alphabusi.com/lead-form/4a702eeb8a3a560415184a047d7780d1" 
+          method="POST"
+          target="crm_submission_frame"
+          onSubmit={handleSubmit}
+          className="p-8 space-y-6 max-h-[70vh] overflow-y-auto custom-scrollbar"
+        >
             {/* CRM Hidden Fields */}
             <input type="hidden" name="company_id" value="1" />
             <input type="hidden" name="category_id" value="2" />
@@ -229,12 +220,19 @@ export default function ConsultationModal({ isOpen, onClose }) {
             >
               {isSubmitting ? 'Transmitting Details...' : 'Initiate Strategy Session'}
             </button>
+            
+            {showSuccess && (
+              <div className="w-full p-4 bg-green-500/20 border border-green-500/30 rounded-xl flex items-center justify-center gap-3 animate-in fade-in zoom-in duration-300">
+                <span className="material-symbols-outlined text-green-500">check_circle</span>
+                <p className="text-green-500 font-bold text-sm uppercase tracking-widest text-center">Inquiry sent successfully</p>
+              </div>
+            )}
+
             <p className="text-xs text-gray-500 text-center">
               By submitting this form, you agree to our privacy policy and terms of service.
             </p>
           </div>
           </form>
-        )}
       </div>
     </div>
   );
