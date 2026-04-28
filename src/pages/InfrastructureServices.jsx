@@ -51,7 +51,9 @@ export default function InfrastructureServices() {
     <div className="page-container bg-[#030712] text-white">
       
       {/* Cinematic Hero */}
-      <section className="relative min-h-[90vh] flex items-center pt-24 overflow-hidden">
+      <main className="flex-grow">
+      {/* Cinematic Hero */}
+      <section className="relative min-h-[70vh] md:min-h-[90vh] flex items-center pt-24 md:pt-32 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-r from-[#030712] via-[#030712]/80 to-transparent z-10"></div>
           <img 
@@ -61,30 +63,34 @@ export default function InfrastructureServices() {
           />
         </div>
         
-        <div className="max-w-[1440px] mx-auto px-8 lg:px-16 relative z-20">
-          <div className="max-w-4xl">
-            <span className="font-label-sm text-primary tracking-[0.4em] uppercase mb-8 block animate-fade-in">Infrastructure Division</span>
-            <h1 className="font-display-xl text-display-xl mb-8 leading-[1.1] tracking-tighter">
-              ARCHITECTING <br />
-              <span className="text-gradient">THE FOUNDATIONS</span> <br />
-              OF PROGRESS.
-            </h1>
-            <p className="font-body-lg text-xl text-slate-400 max-w-2xl mb-12 leading-relaxed">
-              Alpha Wings Tech Group Infrastructure is a multi-sector engineering force specialized in large-scale structural development, urban planning, and critical public networks.
-            </p>
-            <div className="flex gap-6">
-              <Link to="/contact" className="bg-primary px-10 py-5 rounded-lg font-bold text-on-primary hover:shadow-[0_0_40px_rgba(183,196,255,0.4)] transition-all active:scale-95 inline-block">
+        <div className="relative z-20 max-w-container-max mx-auto px-margin-edge w-full pt-32">
+          <div className="flex justify-start mb-8">
+            <Link to="/services" className="inline-flex items-center gap-2 text-slate-400 hover:text-primary transition-colors group font-label-sm uppercase tracking-widest text-xs">
+              <span className="material-symbols-outlined text-[18px] group-hover:-translate-x-1 transition-transform">arrow_back</span>
+              Back to All Services
+            </Link>
+          </div>
+          <div className="max-w-4xl text-center md:text-left items-center md:items-start flex flex-col">
+            <span className="font-label-sm text-primary tracking-[0.4em] uppercase mb-6 md:mb-8 block animate-fade-in">Infrastructure Division</span>
+            <h1 className="font-display-xl text-display-xl mb-6 md:mb-8 leading-[1.1] tracking-tighter">
+  Alpha Infrastructure
+</h1>
+<p className="font-body-lg text-lg md:text-xl text-slate-400 max-w-2xl mb-10 md:mb-12 leading-relaxed">
+  Global construction, industrial engineering, and national road networks. We are a multi-sector engineering force specialized in large-scale structural development.
+</p>
+            <div className="flex flex-col sm:flex-row gap-4 md:gap-6 w-full sm:w-auto">
+              <Link to="/contact" className="bg-primary px-8 md:px-10 py-4 md:py-5 rounded-lg font-bold text-on-primary hover:shadow-[0_0_40px_rgba(183,196,255,0.4)] transition-all active:scale-95 inline-block text-center">
                 Initiate Project Tender
               </Link>
-              <button className="glass-card px-10 py-5 rounded-lg font-bold border border-white/10 hover:bg-white/5 transition-all inline-block">
+              <Link to="/contact" className="glass-card px-8 md:px-10 py-4 md:py-5 rounded-lg font-bold border border-white/10 hover:bg-white/5 transition-all inline-block text-center">
                 Download Capabilities
-              </button>
+              </Link>
             </div>
           </div>
         </div>
 
         {/* Floating Stat */}
-        <div className="absolute bottom-20 right-8 lg:right-16 z-20 hidden md:block">
+        <div className="absolute bottom-10 right-margin-edge z-20 hidden lg:block">
           <div className="glass-card p-8 rounded-2xl border-white/10 backdrop-blur-3xl">
             <div className="text-4xl font-black text-primary mb-2">124+</div>
             <div className="text-[10px] font-bold tracking-widest text-slate-500 uppercase">Global Iconic Projects</div>
@@ -93,38 +99,38 @@ export default function InfrastructureServices() {
       </section>
 
       {/* Core Sectors Detailed */}
-      <section className="py-32 relative overflow-hidden">
-        <div className="max-w-[1440px] mx-auto px-8 lg:px-16">
-          <div className="text-center mb-24">
-            <h2 className="font-headline-lg text-display-xl text-white mb-6 uppercase tracking-tighter">Our Core Sectors</h2>
+      <section className="py-16 md:py-32 relative overflow-hidden">
+        <div className="max-w-container-max mx-auto px-margin-edge">
+          <div className="text-center mb-16 md:mb-24">
+            <h2 className="font-headline-lg text-headline-lg text-white mb-6 uppercase tracking-tighter">Our Core Sectors</h2>
             <p className="text-slate-400 max-w-2xl mx-auto font-body-lg">
               We operate across four strategic pillars, each managed by specialized engineering units and Tier-1 project managers.
             </p>
           </div>
 
-          <div className="space-y-24">
+          <div className="space-y-16 md:space-y-24">
             {mainServices.map((service, i) => (
-              <div key={i} className={`flex flex-col ${i % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-16 items-center`}>
+              <div key={i} className={`flex flex-col ${i % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-10 md:gap-16 items-center`}>
                 <div className="lg:w-1/2 w-full relative">
                   <div className="absolute -inset-4 bg-primary/20 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
                   <div className="relative glass-card rounded-3xl overflow-hidden border border-white/10 group">
-                    <img src={service.image} alt={service.title} className="w-full h-[500px] object-cover grayscale hover:grayscale-0 transition-all duration-700" />
+                    <img src={service.image} alt={service.title} className="w-full h-[300px] md:h-[500px] object-cover grayscale hover:grayscale-0 transition-all duration-700" />
                   </div>
                 </div>
-                <div className="lg:w-1/2 w-full space-y-8">
-                  <span className="material-symbols-outlined text-5xl text-secondary">{service.icon}</span>
-                  <h3 className="font-display-xl text-5xl tracking-tighter">{service.title}</h3>
-                  <p className="text-xl text-slate-400 leading-relaxed font-body-lg">{service.desc}</p>
-                  <ul className="grid grid-cols-2 gap-4">
+                <div className="lg:w-1/2 w-full space-y-6 md:space-y-8 text-center lg:text-left">
+                  <span className="material-symbols-outlined text-4xl md:text-5xl text-secondary mx-auto lg:mx-0 block">{service.icon}</span>
+                  <h3 className="font-display-xl text-3xl md:text-5xl tracking-tighter">{service.title}</h3>
+                  <p className="text-lg md:text-xl text-slate-400 leading-relaxed font-body-lg">{service.desc}</p>
+                  <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-left">
                     {service.details.map((detail, idx) => (
                       <li key={idx} className="flex items-center gap-3 text-slate-300 font-medium">
-                        <div className="w-1.5 h-1.5 rounded-full bg-primary"></div>
+                        <div className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0"></div>
                         {detail}
                       </li>
                     ))}
                   </ul>
-                  <Link to="/contact" className="inline-flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all">
-                    VIEW PORTFOLIO <span className="material-symbols-outlined">arrow_forward</span>
+                  <Link to={`/services/infrastructure/${service.title.split(' ')[0].toLowerCase()}`} className="inline-flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all mx-auto lg:mx-0">
+                    VIEW SECTOR DETAILS <span className="material-symbols-outlined">arrow_forward</span>
                   </Link>
                 </div>
               </div>
@@ -133,48 +139,21 @@ export default function InfrastructureServices() {
         </div>
       </section>
 
-      {/* Building Construction Section (Highlight) */}
-      <section className="py-32 bg-[#080c14] relative">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1541888941259-792739460273?ixlib=rb-4.0.3&auto=format&fit=crop&w=1440&q=80')] bg-cover bg-fixed opacity-5 grayscale mix-blend-overlay"></div>
-        <div className="max-w-[1440px] mx-auto px-8 lg:px-16 relative z-10">
-          <div className="glass-card p-12 lg:p-24 rounded-[60px] border border-primary/20 flex flex-col lg:flex-row gap-16 items-center">
-            <div className="lg:w-2/3">
-              <h2 className="font-display-xl text-6xl mb-8 uppercase tracking-tighter">Building Construction</h2>
-              <p className="text-2xl text-slate-300 font-editorial-italic italic mb-12">
-                "We don't just build structures; we build enduring legacies of engineering excellence and industrial capability."
-              </p>
-              <div className="grid md:grid-cols-2 gap-8">
-                <div className="space-y-4">
-                  <h4 className="font-bold text-primary text-xl">Structural Integrity</h4>
-                  <p className="text-slate-400">Utilizing advanced BIM modeling and proprietary material sciences to ensure century-scale reliability.</p>
-                </div>
-                <div className="space-y-4">
-                  <h4 className="font-bold text-primary text-xl">Project Acceleration</h4>
-                  <p className="text-slate-400">Our agile management frameworks reduce construction timelines by up to 30% without quality compromise.</p>
-                </div>
-              </div>
-            </div>
-            <div className="lg:w-1/3 w-full">
-               <img src="https://images.unsplash.com/photo-1541913053-945f743f3348?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Construction detail" className="rounded-2xl border border-white/10" />
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Specialized Sub-Services Grid */}
-      <section className="py-32 relative">
-        <div className="max-w-[1440px] mx-auto px-8 lg:px-16 text-center mb-24">
-          <h2 className="font-headline-lg text-display-xl mb-6 uppercase tracking-tighter">Specialized Capabilities</h2>
-          <p className="text-slate-400 max-w-2xl mx-auto">
+      <section className="py-16 md:py-32 relative">
+        <div className="max-w-container-max mx-auto px-margin-edge text-center mb-16 md:mb-24">
+          <h2 className="font-headline-lg text-headline-lg mb-6 uppercase tracking-tighter">Specialized Capabilities</h2>
+          <p className="text-slate-400 max-w-2xl mx-auto font-body-lg">
             From precision architecture to master-level interior finishing, our specialized units deliver absolute quality in every detail.
           </p>
         </div>
 
-        <div className="max-w-[1440px] mx-auto px-8 lg:px-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="max-w-container-max mx-auto px-margin-edge grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           {subServices.map((service, i) => (
-            <div key={i} className="glass-panel p-10 rounded-2xl border border-white/5 group hover:bg-primary/5 hover:border-primary/20 transition-all duration-500">
-              <div className="w-14 h-14 rounded-xl bg-surface flex items-center justify-center mb-8 border border-white/5 text-primary group-hover:scale-110 transition-transform">
-                <span className="material-symbols-outlined text-3xl">{service.icon}</span>
+            <div key={i} className="glass-panel p-8 md:p-10 rounded-2xl border border-white/5 group hover:bg-primary/5 hover:border-primary/20 transition-all duration-500">
+              <div className="w-12 h-12 md:w-14 md:h-14 rounded-xl bg-surface flex items-center justify-center mb-6 md:mb-8 border border-white/5 text-primary group-hover:scale-110 transition-transform">
+                <span className="material-symbols-outlined text-2xl md:text-3xl">{service.icon}</span>
               </div>
               <h4 className="font-headline-md text-xl mb-2 group-hover:text-primary transition-colors">{service.name}</h4>
               <div className="w-8 h-[1px] bg-white/20 group-hover:w-16 group-hover:bg-primary transition-all duration-500"></div>
@@ -184,18 +163,18 @@ export default function InfrastructureServices() {
       </section>
 
       {/* Project Workflow Section */}
-      <section className="py-32 bg-surface-container-lowest">
-        <div className="max-w-[1440px] mx-auto px-8 lg:px-16">
-          <h2 className="font-headline-lg text-display-xl mb-24 text-center">THE ALPHA BUILD METHOD</h2>
-          <div className="grid md:grid-cols-3 gap-12">
+      <section className="py-16 md:py-32 bg-surface-container-lowest">
+        <div className="max-w-container-max mx-auto px-margin-edge">
+          <h2 className="font-headline-lg text-headline-lg mb-16 md:mb-24 text-center">THE ALPHA BUILD METHOD</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
             {[
               { step: "01", title: "Site & Strategic Audit", desc: "Exhaustive geological, logistical, and feasibility analysis to establish an optimized baseline." },
               { step: "02", title: "Structural Architecture", desc: "High-fidelity BIM modeling and advanced engineering simulations for peak structural performance." },
               { step: "03", title: "Surgical Execution", desc: "Phased deployment with real-time site monitoring and precision material management." }
             ].map((step, i) => (
-              <div key={i} className="relative p-12 border-l border-white/10 group hover:border-primary transition-colors">
-                <div className="text-6xl font-black text-white/5 absolute top-4 left-8 group-hover:text-primary/10 transition-colors">{step.step}</div>
-                <h4 className="font-bold text-2xl mb-6 relative z-10">{step.title}</h4>
+              <div key={i} className="relative p-8 md:p-12 border-l border-white/10 group hover:border-primary transition-colors">
+                <div className="text-5xl md:text-6xl font-black text-white/5 absolute top-4 left-8 group-hover:text-primary/10 transition-colors">{step.step}</div>
+                <h4 className="font-bold text-xl md:text-2xl mb-4 md:mb-6 relative z-10">{step.title}</h4>
                 <p className="text-slate-400 relative z-10 leading-relaxed">{step.desc}</p>
               </div>
             ))}
@@ -204,21 +183,22 @@ export default function InfrastructureServices() {
       </section>
 
       {/* Final Call to Action */}
-      <section className="py-40 relative overflow-hidden">
+      <section className="py-24 md:py-40 relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img src="https://images.unsplash.com/photo-1541888941259-792739460273?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="Construction background" className="w-full h-full object-cover opacity-20" />
           <div className="absolute inset-0 bg-[#030712]/90"></div>
         </div>
-        <div className="max-w-4xl mx-auto px-8 relative z-10 text-center">
-          <h2 className="font-display-xl text-7xl mb-8 uppercase tracking-tighter">Ready for the Next Build?</h2>
-          <p className="text-xl text-slate-400 mb-12">
+        <div className="max-w-4xl mx-auto px-margin-edge relative z-10 text-center">
+          <h2 className="font-display-xl text-4xl md:text-7xl mb-6 md:mb-8 uppercase tracking-tighter">Ready for the Next Build?</h2>
+          <p className="text-lg md:text-xl text-slate-400 mb-10 md:mb-12">
             Connect with our lead project partners to discuss your institutional infrastructure requirements.
           </p>
-          <Link to="/contact" className="bg-primary text-on-primary px-16 py-6 rounded-lg font-black text-lg hover:shadow-[0_0_50px_rgba(183,196,255,0.5)] transition-all active:scale-95 inline-block">
+          <Link to="/contact" className="bg-primary text-on-primary px-8 md:px-16 py-4 md:py-6 rounded-lg font-black text-base md:text-lg hover:shadow-[0_0_50px_rgba(183,196,255,0.5)] transition-all active:scale-95 inline-block">
             ENGAGE ALPHA INFRASTRUCTURE
           </Link>
         </div>
       </section>
+    </main>
 
     </div>
   );

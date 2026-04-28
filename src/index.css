@@ -4,54 +4,293 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ============================================================
+   GLOBAL THEME TOKENS
+   ============================================================ */
+
+/* DARK (default — identical to original) */
+:root,
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  /* Responsive Tokens */
+  --spacing-margin-edge: 64px;
+  --spacing-gutter: 32px;
+  --spacing-section-gap: 128px;
+  
+  --fs-display-xl: 72px;
+  --fs-headline-lg: 48px;
+  --fs-headline-md: 32px;
+  --fs-body-lg: 18px;
+  --fs-body-md: 16px;
+
+  @media (max-width: 1024px) {
+    --spacing-margin-edge: 48px;
+    --spacing-section-gap: 96px;
+    --fs-display-xl: 60px;
+    --fs-headline-lg: 40px;
+  }
+
+  @media (max-width: 768px) {
+    --spacing-margin-edge: 24px;
+    --spacing-gutter: 20px;
+    --spacing-section-gap: 64px;
+    
+    --fs-display-xl: 42px;
+    --fs-headline-lg: 32px;
+    --fs-headline-md: 24px;
+    --fs-body-lg: 16px;
+    --fs-body-md: 14px;
+  }
+
+  /* Tailwind Theme Tokens (Internal mapping) */
+  --tw-c-bg:                  #1a232e;
+  --tw-c-on-bg:               #f0f2f5;
+  --tw-c-surface:             #283340;
+  --tw-c-surface-dim:         #1a232e;
+  --tw-c-surface-bright:      #334458;
+  --tw-c-container-lowest:    #0f161d;
+  --tw-c-container-low:       #222c38;
+  --tw-c-container:           #283340;
+  --tw-c-container-high:      #2d3a4b;
+  --tw-c-container-highest:   #334458;
+  --tw-c-surface-variant:     #283340;
+  --tw-c-on-surface:          #f0f2f5;
+  --tw-c-on-surface-variant:  #a8b3c1;
+  --tw-c-inverse-surface:     #f0f4f8;
+  --tw-c-inverse-on-surface:  #0b1220;
+  --tw-c-outline:             #404e5d;
+  --tw-c-outline-variant:     rgba(255, 255, 255, 0.1);
+
+  /* Legacy / Component Backgrounds */
+  --bg-body:          #1a232e;
+  --bg-nav:           rgba(3, 7, 18, 0.95);
+  --bg-nav-solid:     #030712;
+  --bg-section-alt:   #0f161d;
+  --bg-surface:       #283340;
+  --bg-surface-low:   #222c38;
+  --bg-surface-lower: #0f161d;
+
+  /* Cards & Glass */
+  --glass-bg:         rgba(255, 255, 255, 0.02);
+  --glass-border:     rgba(255, 255, 255, 0.04);
+  --card-bg:          rgba(34, 44, 56, 0.4);
+  --card-border:      rgba(255, 255, 255, 0.08);
+  --card-border-hover:rgba(91, 127, 255, 0.35);
+  --card-shadow:      0 8px 32px 0 rgba(0,0,0,0.35);
+
+  /* Typography */
+  --text-primary:     #f0f2f5;
+  --text-secondary:   #a8b3c1;
+  --text-muted:       #637283;
+  --text-heading:     #f0f2f5;
+
+  /* Borders & lines */
+  --border-subtle:    rgba(255, 255, 255, 0.05);
+  --border-medium:    rgba(255, 255, 255, 0.10);
+  --border-strong:    #404e5d;
+
+  /* Accents */
+  --accent-primary:   #5b7fff;
+  --accent-secondary: #52b788;
+  --accent-tertiary:  #bfc7d8;
+  --accent-primary-on:#ffffff;
+
+  /* Glow & effects */
+  --glow-primary:     rgba(91, 127, 255, 0.18);
+  --inner-glow:       inset 0 1px 0 0 rgba(255, 255, 255, 0.10);
+  --grid-line:        rgba(255, 255, 255, 0.05);
+  --radial-glow:      radial-gradient(circle at 0% 0%, rgba(91,127,255,0.15) 0%, transparent 50%);
+
+  /* Slider nav text */
+  --nav-link:         #94a3b8;
+  --nav-link-hover:   #ffffff;
+}
+
+/* LIGHT — clean premium corporate look */
+[data-theme="light"] {
+  color-scheme: light;
+
+  /* Responsive Tokens (Inherited but can be overridden if needed) */
+  --spacing-margin-edge: 64px;
+  --spacing-gutter: 32px;
+  --spacing-section-gap: 128px;
+  
+  --fs-display-xl: 72px;
+  --fs-headline-lg: 48px;
+  --fs-headline-md: 32px;
+  --fs-body-lg: 18px;
+  --fs-body-md: 16px;
+
+  @media (max-width: 1024px) {
+    --spacing-margin-edge: 48px;
+    --spacing-section-gap: 96px;
+    --fs-display-xl: 60px;
+    --fs-headline-lg: 40px;
+  }
+
+  @media (max-width: 768px) {
+    --spacing-margin-edge: 24px;
+    --spacing-gutter: 20px;
+    --spacing-section-gap: 64px;
+    
+    --fs-display-xl: 42px;
+    --fs-headline-lg: 32px;
+    --fs-headline-md: 24px;
+    --fs-body-lg: 16px;
+    --fs-body-md: 14px;
+  }
+
+  /* Tailwind Theme Tokens (Internal mapping) */
+  --tw-c-bg:                  #f0f4f8;
+  --tw-c-on-bg:               #0b1220;
+  --tw-c-surface:             #ffffff;
+  --tw-c-surface-dim:         #e2e8f0;
+  --tw-c-surface-bright:      #ffffff;
+  --tw-c-container-lowest:    #ffffff;
+  --tw-c-container-low:       #f8fafd;
+  --tw-c-container:           #f0f4f8;
+  --tw-c-container-high:      #e1e8f0;
+  --tw-c-container-highest:   #d1dce8;
+  --tw-c-surface-variant:     #e2e8f0;
+  --tw-c-on-surface:          #0b1220;
+  --tw-c-on-surface-variant:  #4b5563;
+  --tw-c-inverse-surface:     #1a232e;
+  --tw-c-inverse-on-surface:  #f0f2f5;
+  --tw-c-outline:             #cbd5e1;
+  --tw-c-outline-variant:     rgba(0, 0, 0, 0.1);
+
+  /* Legacy / Component Backgrounds */
+  --bg-body:          #f0f4f8;
+  --bg-nav:           rgba(248, 250, 253, 0.96);
+  --bg-nav-solid:     #f8fafd;
+  --bg-section-alt:   #e4ecf5;
+  --bg-surface:       #dde6f0;
+  --bg-surface-low:   #e8eff7;
+  --bg-surface-lower: #dce5ef;
+
+  /* Cards & Glass */
+  --glass-bg:         rgba(255, 255, 255, 0.80);
+  --glass-border:     rgba(0, 0, 0, 0.07);
+  --card-bg:          rgba(255, 255, 255, 0.90);
+  --card-border:      rgba(0, 0, 0, 0.07);
+  --card-border-hover:rgba(62, 90, 224, 0.40);
+  --card-shadow:      0 8px 32px 0 rgba(0,0,0,0.08);
+
+  /* Typography */
+  --text-primary:     #0b1220;
+  --text-secondary:   #374151;
+  --text-muted:       #6b7280;
+  --text-heading:     #0b1220;
+
+  /* Borders & lines */
+  --border-subtle:    rgba(0, 0, 0, 0.07);
+  --border-medium:    rgba(0, 0, 0, 0.12);
+  --border-strong:    #cbd5e1;
+
+  /* Accents — slightly deeper for light contrast */
+  --accent-primary:   #3d5fe0;
+  --accent-secondary: #2d7a57;
+  --accent-tertiary:  #4b5563;
+  --accent-primary-on:#ffffff;
+
+  /* Glow & effects */
+  --glow-primary:     rgba(62, 90, 224, 0.10);
+  --inner-glow:       inset 0 1px 0 0 rgba(0, 0, 0, 0.04);
+  --grid-line:        rgba(0, 0, 0, 0.04);
+  --radial-glow:      radial-gradient(circle at 0% 0%, rgba(62,90,224,0.08) 0%, transparent 50%);
+
+  /* Slider nav text */
+  --nav-link:         #4b5563;
+  --nav-link-hover:   #0b1220;
+}
+
+/* ============================================================
+   BASE STYLES — consume tokens
+   ============================================================ */
 @layer base {
   html {
-    color-scheme: dark;
+    color-scheme: var(--color-scheme, dark);
+    transition: background-color 0.35s ease, color 0.35s ease;
   }
   body {
-    background-color: #1a232e;
-    color: #f0f2f5;
+    background-color: var(--bg-body);
+    color: var(--text-primary);
     font-family: Inter, sans-serif;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
+    transition: background-color 0.35s ease, color 0.35s ease;
+  }
+
+  /* Headings */
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--text-heading);
+    transition: color 0.35s ease;
+  }
+
+  p, span, li {
+    transition: color 0.35s ease;
   }
 }
 
+/* ============================================================
+   COMPONENT STYLES — use tokens
+   ============================================================ */
 @layer components {
+
+  /* Glass card — works in both themes */
   .glass-card {
-    background: rgba(34, 44, 56, 0.4);
+    background: var(--card-bg);
     backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    @apply shadow-[0_8px_32px_0_rgba(0,0,0,0.3)];
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--card-border);
+    box-shadow: var(--card-shadow);
+    transition: background 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
   }
+
+  /* Glass panel */
   .glass-panel {
-    background: rgba(255, 255, 255, 0.02);
+    background: var(--glass-bg);
     backdrop-filter: blur(16px);
-    border: 1px solid rgba(255, 255, 255, 0.04);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--glass-border);
+    transition: background 0.35s ease, border-color 0.35s ease;
   }
+
+  /* Text gradient — accent stays vibrant in both */
   .text-gradient {
-    background: linear-gradient(135deg, #5b7fff 0%, #52b788 100%);
+    background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
+
+  /* Page container — root of every page */
   .page-container {
-    @apply pt-20 min-h-screen bg-[#1a232e] text-white selection:bg-[#5b7fff]/30;
+    min-height: 100vh;
+    padding-top: 80px;
+    background-color: var(--bg-body);
+    color: var(--text-primary);
+    selection-color: rgba(91, 127, 255, 0.30);
+    transition: background-color 0.35s ease, color 0.35s ease;
   }
 }
 
+/* ============================================================
+   UTILITY OVERRIDES — consume tokens
+   ============================================================ */
 @layer utilities {
   .inner-glow {
-    box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
+    box-shadow: var(--inner-glow);
   }
   .bg-grid-pattern {
     background-image:
-      linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px);
+      linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
     background-size: 32px 32px;
   }
   .radial-glow {
-    background: radial-gradient(circle at 0% 0%, rgba(91, 127, 255, 0.15) 0%, transparent 50%);
+    background: var(--radial-glow);
   }
   .mask-image-gradient-to-t {
     -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
@@ -61,6 +300,223 @@
     position: absolute;
     height: 2px;
     width: 100vw;
-    background: linear-gradient(90deg, transparent, #3b82f6, transparent);
+    background: linear-gradient(90deg, transparent, var(--accent-primary), transparent);
   }
+  .no-scrollbar::-webkit-scrollbar,
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar,
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .animate-infinite-scroll {
+    animation: infinite-scroll 25s linear infinite;
+  }
+}
+
+@keyframes infinite-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* ============================================================
+   NAVIGATION — themed
+   ============================================================ */
+nav {
+  transition: background-color 0.35s ease, border-color 0.35s ease, backdrop-filter 0.35s ease;
+}
+
+[data-theme="light"] nav {
+  color: var(--text-primary);
+}
+
+/* Nav mega menu panel */
+[data-theme="light"] .nav-mega-panel {
+  background-color: var(--bg-nav-solid) !important;
+}
+
+/* Nav links */
+[data-theme="light"] .nav-link-item {
+  color: var(--nav-link);
+}
+[data-theme="light"] .nav-link-item:hover {
+  color: var(--nav-link-hover);
+}
+
+/* Mobile drawer */
+[data-theme="light"] .mobile-drawer {
+  background-color: var(--bg-nav-solid);
+  border-color: var(--border-medium);
+}
+
+/* ============================================================
+   COLOUR TOKEN OVERRIDES — Tailwind classes → CSS vars
+   Light theme makes Tailwind's hardcoded dark colors usable
+   ============================================================ */
+
+/* --- Text --- */
+[data-theme="light"] .text-white,
+[data-theme="light"] .text-on-background,
+[data-theme="light"] .text-on-surface {
+  color: var(--text-primary) !important;
+}
+[data-theme="light"] .text-on-surface-variant {
+  color: var(--text-secondary) !important;
+}
+[data-theme="light"] .text-slate-400,
+[data-theme="light"] .text-slate-500 {
+  color: var(--text-muted) !important;
+}
+[data-theme="light"] .text-primary {
+  color: var(--accent-primary) !important;
+}
+[data-theme="light"] .text-secondary {
+  color: var(--accent-secondary) !important;
+}
+[data-theme="light"] .text-tertiary {
+  color: var(--accent-tertiary) !important;
+}
+
+/* --- Backgrounds --- */
+[data-theme="light"] .bg-surface-container-lowest {
+  background-color: var(--bg-surface-lower) !important;
+}
+[data-theme="light"] .bg-surface-container-low {
+  background-color: var(--bg-surface-low) !important;
+}
+[data-theme="light"] .bg-surface-container,
+[data-theme="light"] .bg-surface-container-high {
+  background-color: var(--bg-surface) !important;
+}
+[data-theme="light"] .bg-surface-variant {
+  background-color: var(--bg-surface) !important;
+}
+
+/* --- Borders --- */
+[data-theme="light"] .border-white\/5 {
+  border-color: var(--border-subtle) !important;
+}
+[data-theme="light"] .border-white\/10 {
+  border-color: var(--border-medium) !important;
+}
+[data-theme="light"] .border-outline-variant\/20 {
+  border-color: var(--border-subtle) !important;
+}
+
+/* --- Specific dark hardcoded bg classes --- */
+/* via-white/10 dividers */
+[data-theme="light"] .via-white\/10 {
+  --tw-gradient-via: rgba(0,0,0,0.12) !important;
+}
+
+/* ============================================================
+   CARDS — per section
+   ============================================================ */
+
+/* Generic hover-border upgrade in light */
+[data-theme="light"] .hover\:border-primary\/30:hover {
+  border-color: rgba(62, 90, 224, 0.35) !important;
+}
+
+/* Glass panel in light — opaque white, subtle shadow */
+[data-theme="light"] .glass-panel {
+  background: var(--glass-bg) !important;
+  border-color: var(--glass-border) !important;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07) !important;
+}
+[data-theme="light"] .glass-card {
+  background: var(--card-bg) !important;
+  border-color: var(--card-border) !important;
+  box-shadow: var(--card-shadow) !important;
+}
+
+/* Inner glow flip */
+[data-theme="light"] .inner-glow {
+  box-shadow: inset 0 1px 0 0 rgba(0,0,0,0.05), 0 4px 16px rgba(0,0,0,0.06) !important;
+}
+
+/* Gradient overlays — flip for light */
+[data-theme="light"] .bg-gradient-to-b {
+  --tw-gradient-from: rgba(240, 244, 248, 0.95) !important;
+}
+[data-theme="light"] .from-primary\/5 {
+  --tw-gradient-from: rgba(62, 90, 224, 0.04) !important;
+}
+
+/* Blur blobs — de-emphasise in light */
+[data-theme="light"] .bg-primary\/10 {
+  background-color: rgba(62, 90, 224, 0.06) !important;
+}
+[data-theme="light"] .bg-primary\/5 {
+  background-color: rgba(62, 90, 224, 0.04) !important;
+}
+[data-theme="light"] .bg-primary-container\/10 {
+  background-color: rgba(62, 90, 224, 0.06) !important;
+}
+
+/* CTA section glass panel */
+[data-theme="light"] .radial-glow {
+  background: radial-gradient(circle at 0% 0%, rgba(62,90,224,0.07) 0%, transparent 60%) !important;
+}
+
+/* ============================================================
+   SECTION ALT BACKGROUNDS
+   ============================================================ */
+[data-theme="light"] section.bg-surface-container-lowest {
+  background-color: var(--bg-section-alt) !important;
+}
+
+/* ============================================================
+   TYPOGRAPHY FINE-TUNING (Light)
+   ============================================================ */
+[data-theme="light"] h1,
+[data-theme="light"] h2,
+[data-theme="light"] h3,
+[data-theme="light"] h4 {
+  color: var(--text-heading) !important;
+}
+[data-theme="light"] p {
+  color: var(--text-secondary);
+}
+
+/* Stats / big numbers stay vivid */
+[data-theme="light"] .text-5xl,
+[data-theme="light"] .text-6xl,
+[data-theme="light"] .text-7xl {
+  color: var(--text-heading);
+}
+
+/* ============================================================
+   STAT BOXES, METRIC CARDS
+   ============================================================ */
+[data-theme="light"] .stat-card,
+[data-theme="light"] [class*="border-primary/20"],
+[data-theme="light"] [class*="border-secondary/20"],
+[data-theme="light"] [class*="border-tertiary/20"] {
+  background-color: #ffffff !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.07) !important;
+}
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+[data-theme="light"] button.bg-primary,
+[data-theme="light"] a.bg-primary {
+  background-color: var(--accent-primary) !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 20px rgba(62, 90, 224, 0.25) !important;
+}
+
+/* ============================================================
+   SMOOTH TRANSITIONS — prevent flash
+   ============================================================ */
+/* Removed global * transition to improve performance */
+.transition-transform,
+[class*="translate"],
+[class*="scale"],
+[class*="rotate"],
+[class*="opacity"] {
+  transition-property: transform, opacity;
 }

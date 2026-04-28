@@ -7,11 +7,20 @@ export default function AdvertisingMarketing() {
 
 <main className="pt-24 pb-section-gap">
 
+<section className="max-w-container-max mx-auto px-margin-edge mb-8">
+  <div className="flex justify-start pt-8">
+    <Link to="/services" className="inline-flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors group font-label-sm uppercase tracking-widest text-xs">
+      <span className="material-symbols-outlined text-[18px] group-hover:-translate-x-1 transition-transform">arrow_back</span>
+      Back to All Services
+    </Link>
+  </div>
+</section>
+
 <section className="max-w-container-max mx-auto px-margin-edge mb-section-gap">
 <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
 <span className="font-label-sm text-label-sm text-tertiary uppercase tracking-widest mb-4 bg-surface-variant px-4 py-2 rounded-full inner-glow">Advertising &amp; Marketing</span>
-<h1 className="font-display-xl text-display-xl text-on-background mb-6">Precision Marketing.<br/>Global Reach.</h1>
-<p className="font-body-lg text-body-lg text-outline max-w-2xl">Data-driven strategies that amplify your brand across global markets. We blend creative excellence with analytical precision to deliver measurable ROI.</p>
+<h1 className="font-display-xl text-display-xl text-on-background mb-6">Global Outreach</h1>
+<p className="font-body-lg text-body-lg text-outline max-w-2xl">Data-driven narrative engineering and global market penetration strategies. We blend creative excellence with analytical precision to deliver measurable ROI.</p>
 </div>
 </section>
 
@@ -20,7 +29,7 @@ export default function AdvertisingMarketing() {
 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
 <Link to="/services/marketing/digital-marketing" className="md:col-span-2 glass-panel rounded-xl p-8 flex flex-col justify-between relative overflow-hidden group block cursor-pointer">
-<img alt="Digital Marketing Concept" className="absolute top-0 right-0 w-full h-full object-cover opacity-20 group-hover:opacity-30 transition-opacity duration-500 z-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl6dDyf_g1JzWc3T_1JUqqYQ_LeMXA6fclplj38D4UKbVeSyjv6IW2fvyyo4aMZLCNO2jLASyGkIFOGgQ86mJq3_0stSj6UbTN5bWN9-2A--XirJGJQXxmris8D55jbrKCfGtJ94RNKQ3TS4ClHGyeF2JVHl09ANa1PttSxDLfYIry4E81nIkbrSjuF33c7_Tk6ZAQXdyr124iGaG_MhIpc_uyB6MCW7GHB45QrLlAwQvv7hOAs3oMMfmQzmOgtDzJt8-CgNvvpLU"/>
+<img alt="Digital Marketing Concept" className="absolute top-0 right-0 w-full h-full object-cover opacity-20 group-hover:opacity-30 transition-opacity duration-500 z-0" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80"/>
 <div className="relative z-10">
 <span className="material-symbols-outlined text-4xl text-primary mb-6">campaign</span>
 <h3 className="font-headline-md text-headline-md text-on-background mb-4">Digital Marketing</h3>
@@ -121,6 +130,16 @@ export default function AdvertisingMarketing() {
             <p className="font-body-md text-on-surface-variant">Our creative teams deliver standout campaigns recognized by industry leaders globally.</p>
         </div>
     </div>
+</section>
+
+<section className="py-20 md:py-32 text-center max-w-4xl mx-auto">
+    <h2 className="font-display-xl text-display-xl text-on-surface mb-8 tracking-tighter">Dominate Your <span className="text-primary italic">Market</span> Vertical.</h2>
+    <p className="font-body-lg text-on-surface-variant mb-12">
+        In the global information layer, visibility is power. We engineer the resonance your brand deserves.
+    </p>
+    <Link to="/contact" className="bg-primary text-on-primary px-12 py-5 rounded-xl font-bold uppercase tracking-widest text-sm hover:shadow-[0_0_50px_rgba(91,127,255,0.4)] transition-all inline-block text-center">
+        Initiate Outreach Strategy
+    </Link>
 </section>
 
 </main>

@@ -5,46 +5,52 @@ export default function GovernmentServices() {
   return (
     <div className="page-container">
 
-<main className="pt-24 pb-section-gap">
+<main className="pt-24 md:pt-32 pb-16 md:pb-section-gap">
 
-<section className="max-w-container-max mx-auto px-margin-edge mb-section-gap">
-<div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center min-h-[614px]">
-<div className="lg:col-span-7 z-10">
+<section className="max-w-container-max mx-auto px-margin-edge mb-16 md:mb-section-gap">
+  <div className="flex justify-start mb-8">
+    <Link to="/services" className="inline-flex items-center gap-2 text-on-surface-variant hover:text-primary transition-colors group font-label-sm uppercase tracking-widest text-xs">
+      <span className="material-symbols-outlined text-[18px] group-hover:-translate-x-1 transition-transform">arrow_back</span>
+      Back to All Services
+    </Link>
+  </div>
+  <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-gutter items-center min-h-auto md:min-h-[614px]">
+<div className="lg:col-span-7 z-10 text-center lg:text-left flex flex-col items-center lg:items-start">
 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high border border-outline-variant mb-6">
 <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
 <span className="font-label-sm text-label-sm text-tertiary tracking-widest uppercase">Government Services</span>
 </div>
-<h1 className="font-display-xl text-display-xl text-on-background mb-8 leading-tight">
-                        Digital Public <br/>
+<h1 className="font-display-xl text-display-xl text-on-background mb-6 md:mb-8 leading-tight">
+                        Digital Public <br className="hidden md:block" />
 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-surface-tint">Infrastructure</span> &amp; Consulting
                     </h1>
-<p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-10">
+<p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-8 md:mb-10">
                         Architecting resilient, secure, and highly efficient digital ecosystems for public sector entities worldwide. We deliver institutional-grade solutions bridging legacy systems with tomorrow's technological mandates.
                     </p>
-<div className="flex flex-wrap gap-4">
-<button className="bg-gradient-to-r from-primary-container to-primary/80 text-on-primary-container px-8 py-4 rounded-lg font-label-sm text-label-sm inner-glow hover:opacity-90 transition-opacity">
+<div className="flex flex-col sm:flex-row flex-wrap gap-4 w-full sm:w-auto">
+<Link to="/contact" className="bg-gradient-to-r from-primary-container to-primary/80 text-on-primary-container px-8 py-4 rounded-lg font-label-sm text-label-sm inner-glow hover:opacity-90 transition-opacity inline-block text-center">
                             Initiate Consultation
-                        </button>
-<button className="glass-panel text-on-background px-8 py-4 rounded-lg font-label-sm text-label-sm hover:bg-surface-container-highest transition-colors">
+                        </Link>
+                        <Link to="/contact" className="glass-panel text-on-background px-8 py-4 rounded-lg font-label-sm text-label-sm hover:bg-surface-container-highest transition-colors inline-block text-center">
                             View Case Studies
-                        </button>
+                        </Link>
 </div>
 </div>
-<div className="lg:col-span-5 relative h-full min-h-[400px] rounded-xl overflow-hidden glass-panel">
-<img alt="Abstract data visualization with deep blue and cyan glowing lines representing secure public infrastructure" className="absolute inset-0 w-full h-full object-cover opacity-60 mix-blend-luminosity" data-alt="Abstract data visualization with deep blue and cyan glowing lines representing secure public infrastructure" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLiT0y7FUfYhIgbGJEhOFnI0UNHnykYXz6sFqPodeBhhkRJ5j28Z9QJiyO0FcqNDJdr1vDunQTqyq1zv2StB21i6LMlMdR3SrY5p6XVzyGcMFugQH07bDLDmxjFYN9Rcv20zbp2l2dskrUHjJIIuPmubCGSsUrdcPbXgsCUrY0ncARyLHYlYCEADl70XK0sKvmUWz0zG_uATAFGJMX8duj_uz0ZhmkzKpmLpjW27dFfjhzTelNlsKu4AbPLblwMnW-TDwsHBARg28"/>
+<div className="lg:col-span-5 relative h-full min-h-[300px] md:min-h-[400px] rounded-xl overflow-hidden glass-panel">
+<img alt="Public infrastructure visualization" className="absolute inset-0 w-full h-full object-cover opacity-60 mix-blend-luminosity" src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=80"/>
 <div className="absolute inset-0 bg-gradient-to-tr from-background via-transparent to-primary/10"></div>
 </div>
 </div>
 </section>
 
-<section className="max-w-container-max mx-auto px-margin-edge mb-section-gap">
-<div className="mb-16">
+<section className="max-w-container-max mx-auto px-margin-edge mb-16 md:mb-section-gap">
+<div className="mb-12 md:mb-16 text-center lg:text-left">
 <h2 className="font-headline-lg text-headline-lg text-on-background mb-4">Strategic Offerings</h2>
 <p className="font-body-lg text-body-lg text-on-surface-variant max-w-3xl">Comprehensive advisory and implementation services tailored for complex regulatory environments.</p>
 </div>
 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-<Link to="/services/government/documentation-support" className="glass-panel p-10 rounded-xl relative overflow-hidden group hover:bg-surface-container-high transition-all duration-500 block">
+<Link to="/services/government/documentation-support" className="glass-panel p-8 md:p-10 rounded-xl relative overflow-hidden group hover:bg-surface-container-high transition-all duration-500 block">
 <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
 <span className="material-symbols-outlined text-4xl text-primary mb-6" style={{"fontVariationSettings":"'FILL' 1"}}>description</span>
 <h3 className="font-headline-md text-headline-md text-on-background mb-4">Documentation Support</h3>
@@ -53,7 +59,7 @@ export default function GovernmentServices() {
                     </p>
 </Link>
 
-<Link to="/services/government/digital-services" className="glass-panel p-10 rounded-xl relative overflow-hidden group hover:bg-surface-container-high transition-all duration-500 md:col-span-2 block">
+<Link to="/services/government/digital-services" className="glass-panel p-8 md:p-10 rounded-xl relative overflow-hidden group hover:bg-surface-container-high transition-all duration-500 md:col-span-2 block">
 <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-primary/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
 <span className="material-symbols-outlined text-4xl text-primary mb-6" style={{"fontVariationSettings":"'FILL' 1"}}>account_tree</span>
 <h3 className="font-headline-md text-headline-md text-on-background mb-4">Digital Services Consulting</h3>
@@ -62,7 +68,7 @@ export default function GovernmentServices() {
                     </p>
 </Link>
 
-<Link to="/services/government/compliance-advisory" className="glass-panel p-10 rounded-xl relative overflow-hidden group hover:bg-surface-container-high transition-all duration-500 md:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-10 items-center block cursor-pointer">
+<Link to="/services/government/compliance-advisory" className="glass-panel p-8 md:p-10 rounded-xl relative overflow-hidden group hover:bg-surface-container-high transition-all duration-500 md:col-span-3 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center block cursor-pointer">
 <div>
 <span className="material-symbols-outlined text-4xl text-primary mb-6" style={{"fontVariationSettings":"'FILL' 1"}}>verified_user</span>
 <h3 className="font-headline-md text-headline-md text-on-background mb-4">Compliance Advisory</h3>
@@ -70,12 +76,12 @@ export default function GovernmentServices() {
                             Navigating intricate legislative requirements. Our experts provide proactive risk mitigation, audit readiness, and continuous compliance monitoring against evolving global standards.
                         </p>
 </div>
-<div className="h-48 rounded-lg bg-surface-container-lowest border border-outline-variant/30 flex items-center justify-center relative overflow-hidden">
+<div className="h-40 md:h-48 rounded-lg bg-surface-container-lowest border border-outline-variant/30 flex items-center justify-center relative overflow-hidden">
 <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary/10 to-transparent"></div>
 <div className="flex gap-4 opacity-50">
-<div className="w-16 h-16 rounded border border-outline-variant/50 flex items-center justify-center"><span className="material-symbols-outlined">security</span></div>
-<div className="w-16 h-16 rounded border border-outline-variant/50 flex items-center justify-center"><span className="material-symbols-outlined">gavel</span></div>
-<div className="w-16 h-16 rounded border border-outline-variant/50 flex items-center justify-center"><span className="material-symbols-outlined">policy</span></div>
+<div className="w-12 h-12 md:w-16 md:h-16 rounded border border-outline-variant/50 flex items-center justify-center"><span className="material-symbols-outlined">security</span></div>
+<div className="w-12 h-12 md:w-16 md:h-16 rounded border border-outline-variant/50 flex items-center justify-center"><span className="material-symbols-outlined">gavel</span></div>
+<div className="w-12 h-12 md:w-16 md:h-16 rounded border border-outline-variant/50 flex items-center justify-center"><span className="material-symbols-outlined">policy</span></div>
 </div>
 </div>
 </Link>
@@ -83,9 +89,9 @@ export default function GovernmentServices() {
 </section>
 
 <section className="max-w-container-max mx-auto px-margin-edge">
-<div className="border-t border-outline-variant/30 pt-16">
-<h2 className="font-headline-lg text-headline-lg text-on-background mb-16 text-center">Execution Methodology</h2>
-<div className="grid grid-cols-1 md:grid-cols-5 gap-4 relative">
+<div className="border-t border-outline-variant/30 pt-12 md:pt-16">
+<h2 className="font-headline-lg text-headline-lg text-on-background mb-12 md:mb-16 text-center">Execution Methodology</h2>
+<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 md:gap-4 relative">
 
 <div className="hidden md:block absolute top-1/2 left-0 w-full h-[1px] bg-outline-variant/30 -z-10 -translate-y-1/2"></div>
 
@@ -128,12 +134,12 @@ export default function GovernmentServices() {
 </section>
 </main>
 
-<section className="max-w-container-max mx-auto px-margin-edge py-section-gap border-t border-outline-variant/30">
+<section className="max-w-container-max mx-auto px-margin-edge py-12 md:py-section-gap border-t border-outline-variant/30">
     <div className="mb-12 text-center">
         <h2 className="font-headline-lg text-headline-lg text-on-background mb-4">Frequently Asked Questions</h2>
-        <p className="font-body-md text-on-surface-variant max-w-2xl mx-auto">Addressing common inquiries regarding our public sector solutions and methodologies.</p>
+        <p className="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">Addressing common inquiries regarding our public sector solutions and methodologies.</p>
     </div>
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
         <div className="glass-panel p-6 rounded-lg">
             <h4 className="font-headline-md text-on-background mb-2">How do you ensure data security?</h4>
             <p className="font-body-md text-on-surface-variant">We employ zero-trust architecture, robust encryption protocols, and comply strictly with international and federal data protection standards to safeguard all public infrastructure data.</p>
